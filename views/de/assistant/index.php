@@ -300,6 +300,42 @@ Telefonnummer für Rückfragen:
         </div>
     </section>
 
+<!--### Feedback Section ###-->
+
+<section class="assistant-section" style="clear: both;">
+    <h1>
+        Feedback einholen
+    </h1>
+
+    <div class="accordion">
+        <h1>
+        Zwei theoretische Ansätze
+        </h1>
+
+        <div class="accordion_content">
+
+
+            <ul>
+                <li>
+                    <a href="<?= $controller->link_for('assistant/feedback_info/salmon') ?>" data-dialog="size=640x610">5-Stufen-Modell nach G. Salmon</a>
+                </li>
+                <li>
+                    <a href="<?= $controller->link_for('assistant/feedback_info/verlauf') ?>" data-dialog="size=640x610">Nach Kursverlauf</a>
+                </li>
+            </ul>
+        </div>
+
+  <h1>Zwei praktische Tools</h1>
+    <div class="accordion_content">
+<?= Studip\LinkButton::create(_('Forum anlegen'), $controller->url_for('assistant/forum')) ?>
+<p>Asynchron Probleme und Fragen diskutieren im Forum. Dies ist in Kombination mit asynchronen Lehrformen sinnvoll.
+  <?= Studip\LinkButton::create(_('Losblubbern'), $controller->url_for('assistant/blubber')) ?>
+        <p>Synchron Probleme und Fragen diskutieren im Blubber. Verabreden Sie sich mit Ihren Studierenden zu einer Sprechstunde im Blubber.
+    </div>
+</div>
+</section>
+
+
     <section class="assistant-section" style="clear: both;">
         <h1>
             Aufgaben stellen

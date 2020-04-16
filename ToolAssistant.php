@@ -17,9 +17,9 @@ class ToolAssistant extends StudIPPlugin implements StandardPlugin
 
         $preferredLang = mb_substr($GLOBALS['user']->preferred_language, 0, 2);
         if ($preferredLang=='en') {
-            $name='🧍🏠 Teach Online';
+            $name='Teach Online';
         } else {
-            $name='🧍🏠 Online-Lehre';
+            $name='Online-Lehre';
         }
 
         if ($this->isActivated() && Navigation::hasItem('/course/admin')) {

@@ -29,6 +29,7 @@ class AssistantController extends ToolAssistantBaseController
             $name='Online-Lehre';
         }
         Navigation::activateItem('/course/assistant');
+        #Icon::create('info', Icon::ROLE_NEW)->asImg(16);
         PageLayout::setTitle(Context::getHeaderLine() . ' - ' . $name);
         PageLayout::addStylesheet($this->plugin->getPluginURL() . '/assets/assistant.css?v=0.1');
 
@@ -126,6 +127,10 @@ class AssistantController extends ToolAssistantBaseController
     }
 
     public function vips_info_action($view = 'example')
+    {
+        $this->view = $view;
+    }
+    public function feedback_info_action($view = 'example')
     {
         $this->view = $view;
     }
@@ -407,5 +412,21 @@ class AssistantController extends ToolAssistantBaseController
         $folder = $this->createFolder($foldername, '', 'HomeworkFolder');
 
         $this->redirect(URLHelper::getURL('dispatch.php/course/files/index/' . $folder->id, array('cid' => $this->course_id)));
+    }
+    public function forum_action()
+    {
+        $plugin_manager = PluginManager::getInstance();
+        $forum = $plugin_manager->getPlugin('CoreForum');
+        $plugin_manager->setPluginActivated($forum->getPluginId(), $this->course_id, true);
+
+        $this->redirect(URLHelper::getURL('plugins.php/coreforum/index', array('cid' => $this->course_id)));
+    }
+    public function blubber_action()
+    {
+        $plugin_manager = PluginManager::getInstance();
+        $blubber = $plugin_manager->getPlugin('Blubber');
+        $plugin_manager->setPluginActivated($blubber->getPluginId(), $this->course_id, true);
+
+        $this->redirect(URLHelper::getURL('plugins.php/blubber/streams/forum', array('cid' => $this->course_id)));
     }
 }
