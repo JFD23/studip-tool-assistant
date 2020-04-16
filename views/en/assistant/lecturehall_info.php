@@ -14,7 +14,7 @@
         </p>
     </div>
     <p>
-        Automated lecture recordings have been used at Osnabrück University for many years for about 50 lectures per semester. The procedure is very simple for lecturers:
+        Automated lecture recordings have been used at Hochschule Wismar for many years for about 50 lectures per semester. The procedure is very simple for lecturers:
     </p>
 <ul>
     <li>Make a recording request</li>
@@ -42,14 +42,14 @@
         Due to the special situation during the closing time, please contact us if you wish to record your lecture in the lecture hall without an audience.
     </p>
 <p>
-    Please send an e-mail to: <a href="mailto:virtuos@uni-osnabrueck.de">virtuos@uni-osnabrueck.de</a> or send a request below.
+    Please send an e-mail to: <a href="mailto:elearning@hs-wismar.de">elearning@hs-wismar.de</a> or send a request below.
 </p>
     <p>
     Recordings are also possible at short notice!
 </p>
     <?= Studip\LinkButton::create('Send a request',
         URLHelper::getURL('dispatch.php/messages/write',
-            ['rec_uname' => 'virtuos@studip',
+            ['rec_uname' => 'elz@studip',
                 'default_subject' => _('Request a lecture hall recording for '.Context::get()->Name),
                 'default_body' => _('Dear virtUOS team,
 I want to record in the lecture hall.

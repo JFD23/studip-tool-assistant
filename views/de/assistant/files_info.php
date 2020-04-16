@@ -1,7 +1,7 @@
 <? if ($view === 'example'): ?>
     <h2>Dateien bereitstellen: Beispiel</h2>
     <p>
-        Dateien bereitzustellen ist die meistgenutzte Funktion jedes Lernmanagementsystems, so auch bei Stud.IP: Über 50.000 Dateien werden an der Uni Osnabrück pro Semester in Lehrveranstaltungen hochgeladen und dann über 1,5 Mio. mal heruntergeladen..
+        Dateien bereitzustellen ist die meistgenutzte Funktion jedes Lernmanagementsystems, so auch bei Stud.IP: Rund 10.000 Dateien werden an der HS Wismar pro Semester in Lehrveranstaltungen hochgeladen.
     </p>
 <p>
     <b>Typische Beispiele</b> für bereitgestellte Dateien sind:

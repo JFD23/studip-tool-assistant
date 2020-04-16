@@ -9,7 +9,7 @@
     <p>
         The new software "Opencast Studio" is now available via Stud.IP. It is a web-based portal that allows you to record your screen and, if desired, a camera image on your own PC without installing additional software.
         The computer used should meet normal performance requirements and have a current version of Firefox or Google Chrome installed.
-        After the recording in Opencast Studio it will be uploaded to the Osnabrück University Opencast servers and are made available to students in their Stud.IP course automatically.
+        After the recording in Opencast Studio it will be uploaded to the Hochschule Wismar Opencast servers and are made available to students in their Stud.IP course automatically.
     </p>
     <p>
         The university has sufficient capacity to enable the above-mentioned recordings with this technology as well.

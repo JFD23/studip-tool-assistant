@@ -73,7 +73,7 @@
                 Gute Lehre ohne Präsenz!?</em>
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Hinweise zur Didaktik'), 'https://www.virtuos.uni-osnabrueck.de/hochschuldidaktik/gute_lehre_ohne_praesenz.html', ['target' => '_blank', 'data-action' => 'tips/gute_lehre']) ?>
+                <?= Studip\LinkButton::create(_('Hinweise zur Didaktik'), 'https://www.hs-wismar.de/hochschule/einrichtungen/e-learning-zentrum/lehre-weiterentwickeln/', ['target' => '_blank', 'data-action' => 'tips/gute_lehre']) ?>
                 <p>Wir haben einige didaktische Hinweise und Anregungen zusammengetragen, damit Sie Ihre Lehre möglichst gut an die aktuellen Gegebenheiten anpassen
                     und den erhöhten Anforderungen an Selbstlernkompetenzen der Studierenden Rechnung tragen können. </p>
 
@@ -102,13 +102,12 @@
             <div class="accordion_content">
                 <?= Studip\LinkButton::create(_('Anfrage stellen'),
                     URLHelper::getURL('dispatch.php/messages/write',
-                        ['rec_uname' => 'virtuos@studip',
+                        ['rec_uname' => 'elz@studip',
                         'default_subject' => _('Anfrage Hörsaalaufzeichnung für '.Context::get()->Name),
-                        'default_body' => _('Liebes virtUOS-Team,
-ich möchte im Hörsaal aufzeichnen.
+                        'default_body' => _('Liebes ELZ-Team,
+ich möchte im Hörsaal H1/R131 aufzeichnen.
 
 Mein Terminwunsch: (Datum/Wochentag, Uhrzeit, einmalig/regelmäßig)
-Mein Hörsaalwunsch: (Raum oder Stadtbereich)
 
 Veranstaltung: '.Context::get()->Name.' ('.$course_id.')
 
@@ -133,20 +132,20 @@ Telefonnummer für Rückfragen:
             </h1>
             <div class="accordion_content">
                 <?= Studip\LinkButton::create(_('Weitere Informationen'),
-                    'https://www.virtuos.uni-osnabrueck.de/digitale_lehre/covid_19.html',
+                    'https://www.hs-wismar.de/hochschule/information/presse-medien/informationen-zum-coronavirus/',
                     ["target"=>"_blank", 'data-action' => 'tips/covid']) ?>
                 <p>
-                    Die Universität Osnabrück betreibt zwei Videostudios in den Räumen 15/125 und 07/102 (LehrKolleg).
-                    Hier können mit Unterstützung / Einweisung durch virtUOS-Mitarbeiter Videos in überdurchschnittlicher
+                    Die Hochschule Wismar betreibt das PELA Videostudio im ITSMZ Raum 104.
+                    Hier können mit Unterstützung / Einweisung durch MitarbeiterInnen des E-Learning-Zentrums Videos in überdurchschnittlicher
                     Qualität produziert werden.
                 </p>
                 <ul>
-                    <li><a href="<?= $controller->link_for('assistant/studio_info/selfrecording') ?>" data-dialog="size=640x500">Impressionen aus dem Self-Recording-Studio im Lehrkolleg</a></li>
+                    <li><a href="<?= $controller->link_for('assistant/studio_info/selfrecording') ?>" data-dialog="size=640x500">Impressionen aus dem PELA</a></li>
                 </ul>
 
                 <p>
                     Bitte kontaktieren Sie uns mit einer E-Mail an
-                    <a href="mailto:virtuos@uni-osnabrueck.de">virtuos@uni-osnabrueck.de</a>.
+                    <a href="mailto:elearning@hs-wismar.de">elearning@hs-wismar.de</a>.
                 </p>
             </div>
 
@@ -259,16 +258,16 @@ Telefonnummer für Rückfragen:
                 </ul>
             </div>
 
-            <h1>
+            <!--<h1>
                 Kontinuierliche Gruppenkommunikation (Messenger)
             </h1>
             <div class="accordion_content">
-                <!--<?= Studip\LinkButton::create(_('Messenger öffnen'), $controller->url_for('mail')) ?>-->
+                <?= Studip\LinkButton::create(_('Messenger öffnen'), $controller->url_for('mail')) ?>
                 <div style="float:right;margin-left:10px;">
                     <img src="<?= $plugin->getPluginURL() ?>/assets/studip-riot.jpg" width="160">
                 </div>
                 <p>Für Lern- und Arbeitsgruppen wird heute oft eine schnelle und niedrigschwellige Kommunikation gewünscht, auch per App vom Mobilgerät (Vorbild: Slack, Whatsapp).
-                    Die Uni Osnabrück bietet dafür den Dienst "Riot".</p>
+                    Die HS Wismar bietet dafür den Dienst "Riot".</p>
                 <ul>
                     <li>
                         <a href="https://www.rz.uni-osnabrueck.de/homeoffice/riot.html" class="link-extern" target="_blank">So geht's: Matrix/Riot einrichten (RZ)</a>
@@ -277,7 +276,7 @@ Telefonnummer für Rückfragen:
                         <a href="<?= $controller->link_for('assistant/messenger_info/blubber') ?>" data-dialog="size=640x500">Alternative in Stud.IP: Blubber-Chat</a>
                     </li>
                 </ul>
-            </div>
+            </div>-->
 
             <h1>
                 Gemeinsam an Texten arbeiten
@@ -354,16 +353,16 @@ Telefonnummer für Rückfragen:
                 Wir haben hier nur die grundlegendsten Szenarien vorgestellt. Mit Stud.IP und anderen Diensten können Sie
                     Ihre Lehre auf viele weitere Arten unterstützen. Sprechen Sie uns einfach an:
                 <br><br>
-                <a href="mailto:virtuos@uni-osnabrueck.de">virtuos@uni-osnabrueck.de</a><br>
-                Tel. 0541/969-6666<br>
-                <a href="https://www.virtuos.uni-osnabrueck.de/digitale_lehre/covid_19.html" class="link-extern" target="_blank"
+                <a href="mailto:elearning@hs-wismar.de">elearning@hs-wismar.de</a><br>
+                Tel. 03841/753-7805<br>
+                <a href="https://intern.hs-wismar.de/hochschule/stabsstellen-des-rektorats/e-learning-zentrum/kommunikation-in-corona-zeiten/" class="link-extern" target="_blank"
                     >COVID-19: Hinweise zum Einsatz Digitaler Lehre
                 </a><br>
-                <a href="https://www.rz.uni-osnabrueck.de/homeoffice/homeoffice.html" class="link-extern" target="_blank">Homeoffice-Dienste des Rechenzentrums</a>
+                <a href="https://www.hs-wismar.de/hochschule/einrichtungen/itsmz/it-info/arbeiten-von-unterwegs/" class="link-extern" target="_blank">Homeoffice-Dienste des ITSMZ</a>
             </p>
 
             <?= Studip\LinkButton::create(_('Anfrage stellen'),
-                    URLHelper::getURL('dispatch.php/messages/write', ['rec_uname' => 'virtuos@studip']), ['data-dialog' => '', 'data-action' => 'messages/write']) ?>
+                    URLHelper::getURL('dispatch.php/messages/write', ['rec_uname' => 'elz@studip']), ['data-dialog' => '', 'data-action' => 'messages/write']) ?>
         </div>
     </section>
 </div>

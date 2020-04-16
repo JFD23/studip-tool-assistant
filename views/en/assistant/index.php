@@ -103,13 +103,12 @@
             <div class="accordion_content">
                 <?= Studip\LinkButton::create('Send a request',
                     URLHelper::getURL('dispatch.php/messages/write',
-                        ['rec_uname' => 'virtuos@studip',
+                        ['rec_uname' => 'elz@studip',
                             'default_subject' => _('Request a lecture hall recording for '.Context::get()->Name),
-                            'default_body' => _('Dear virtUOS team,
-I want to record in the lecture hall.
+                            'default_body' => _('Dear elearning team,
+I want to record in the lecture hall of house 1 room 131.
 
 My preferred date: (date/weekday, time, once/regularly)
-My lecture hall wish: (room or city area)
 
 Event: '.Context::get()->Name.' ('.$course_id.')
 
@@ -134,16 +133,16 @@ Phone number for questions:
             </h1>
             <div class="accordion_content">
                 <?= Studip\LinkButton::create(_('Further information'),
-                    'https://www.virtuos.uni-osnabrueck.de/digitale_lehre/covid_19.html',
+                    'https://www.hs-wismar.de/en/university/information/presse-medien/coronavirus-information/',
                     ["target"=>"_blank", 'data-action' => 'tips/covid']) ?>
                 <p>
-                    Osnabrück University runs two video studios in rooms 15/125 and 07/102 (LehrKolleg).
+                    Hochschule Wismar runs two video studios in rooms 15/125 and 07/102 (LehrKolleg).
                     Here, with the support and instruction of virtUOS staff, you can produce videos in above-average
                     quality.
                 </p>
                 <p>
                     Please contact us with an e-mail to
-                    <a href="mailto:virtuos@uni-osnabrueck.de">virtuos@uni-osnabrueck.de</a>.
+                    <a href="mailto:elearning@hs-wismar.de">elearning@hs-wismar.de</a>.
                 </p>
             </div>
 
@@ -256,13 +255,13 @@ Phone number for questions:
             <h1>
                 Continuous group communication (Messenger)
             </h1>
-            <div class="accordion_content">
-                <!-- = Studip\LinkButton::create(_('Open messenger'), $controller->url_for('mail')) ?>-->
+          <!--  <div class="accordion_content">
+                = Studip\LinkButton::create(_('Open messenger'), $controller->url_for('mail')) ?>
                 <div style="float:right;margin-left:10px;">
                     <img src="<?= $plugin->getPluginURL() ?>/assets/studip-riot.jpg" width="160">
                 </div>
                 <p>Fast and low-threshold communication is a common request nowadays, also via an app from mobile devices (like Slack or Whatsapp).
-                    Osnabrück University offers the "Riot" service for this purpose.
+                    Hochschule Wismar offers the "Riot" service for this purpose.
                 <ul>
                     <li>
                         <a href="https://www.rz.uni-osnabrueck.de/homeoffice/riot.html" class="link-external" target="_blank">Guide: Set up Matrix/Riot (RZ)</a>
@@ -271,7 +270,7 @@ Phone number for questions:
                         <a href="<?= $controller->link_for('assistant/messenger_info/blubber') ?>" data-dialog="size=640x500">An alternative in Stud.IP: Blubber chat</a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
 
             <h1>
                 Working together on texts
@@ -347,14 +346,14 @@ Phone number for questions:
                 We have only presented the most basic scenarios here. With Stud.IP and other services you can
                 support your teaching in many more ways. Please feel free to contact us:
                 <br><br>
-                <a href="mailto:virtuos@uni-osnabrueck.de">virtuos@uni-osnabrueck.de</a><br>
-                Tel. 0541/969-6666<br>
-                <a href="https://www.virtuos.uni-osnabrueck.de/digitale_lehre/covid_19.html" class="link-external" target="_blank">COVID-19: Notes on the use of digital teaching </a><br>
-                <a href="https://www.rz.uni-osnabrueck.de/homeoffice/homeoffice.html" class="link-external" target="_blank">Home office services provided by the computing center (RZ)</a>
+                <a href="mailto:elearning@hs-wismar.de">elearning@hs-wismar.de</a><br>
+                Tel. 03841/753 7805<br>
+                <a href="https://intern.hs-wismar.de/hochschule/stabsstellen-des-rektorats/e-learning-zentrum/kommunikation-in-corona-zeiten/" class="link-external" target="_blank">COVID-19: Notes on the use of digital teaching </a><br>
+                <a href="https://www.hs-wismar.de/en/university/einrichtungen/itsmz/it-info/working-on-the-go/" class="link-external" target="_blank">Home office services provided by the ITSMC</a>
             </p>
 
             <?= Studip\LinkButton::create(_('Send a request'),
-                URLHelper::getURL('dispatch.php/messages/write', ['rec_uname' => 'virtuos@studip',
+                URLHelper::getURL('dispatch.php/messages/write', ['rec_uname' => 'elz@studip',
                     'default_subject' => 'Request about digital teaching for '.Context::get()->Name
                 ]), ['data-dialog' => '', 'data-action' => 'messages/write']) ?>
         </div>
@@ -366,5 +365,3 @@ Phone number for questions:
         active: false
     });
 </script>
-
-

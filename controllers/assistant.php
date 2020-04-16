@@ -35,13 +35,13 @@ class AssistantController extends ToolAssistantBaseController
         $widget = new SidebarWidget();
         $widget->setTitle($name);
         if ($preferredLang=='en') {
-            $widget->addElement(new WidgetElement('Osnabrück University offers many opportunities to design teaching online via virtUOS and the computing center (Rechenzentrum).
+            $widget->addElement(new WidgetElement('Hochschule Wismar offers many opportunities to design teaching online via E-Learning-Centre and the ITSMC.
                 Reliable operation and personal support are guaranteed for the tools presented here and they allow for a use that is unobjectionable in terms of data protection law.<br><br>
                 On this page, you will find initial information and you can start further steps directly from here.'));
             $widget->addElement(new WidgetElement(Studip\LinkButton::create(_('Download cheat sheet'), $this->plugin->getPluginURL().'/assets/cheatsheet-teach-online.pdf')));
         } else {
             $widget->addElement(new WidgetElement(
-                'Die Universität Osnabrück bietet über virtUOS und Rechenzentrum viele Möglichkeiten, Lehre online zu gestalten.
+                'Die Hochschule Wismar bietet mit dem ELZ und ITSMZ viele Möglichkeiten, Lehre online zu gestalten.
                  Für die hier vorgestellten Tools sind verlässlicher Betrieb und persönlicher Support gewährleistet und sie
                  ermöglichen eine datenschutzrechtlich unbedenkliche Nutzung.<br><br>
                  Hier finden Sie erste Informationen und können weitere Schritte direkt von hier aus starten.')
@@ -367,7 +367,7 @@ class AssistantController extends ToolAssistantBaseController
                 $new_folder = new HomeworkFolder();
                 break;
             case 'StandardFolder':
-            default: 
+            default:
                 $new_folder = new StandardFolder();
         }
         $new_folder->setDataFromEditTemplate($request);

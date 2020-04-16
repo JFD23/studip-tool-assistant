@@ -2,7 +2,7 @@
     <h2>Provide files: Example</h2>
     <p>
         Making files available is the most frequently used function of any learning management system, including Stud.IP:
-        More than 50,000 files are uploaded in courses at Osnabrück University every semester and then downloaded more than 1.5 million times..
+        More than 50,000 files are uploaded in courses at Hochschule Wismar every semester and then downloaded more than 1.5 million times..
     </p>
 <p>
     <b>Typical examples</b> for uploaded files are:

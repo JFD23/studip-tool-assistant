@@ -14,7 +14,7 @@
         </p>
     </div>
     <p>
-        Automatisierte Vorlesungsaufzeichnungen werden an der Universität Osnabrück schon seit vielen Jahren
+        Automatisierte Vorlesungsaufzeichnungen werden an der Hochschule Wismar schon seit vielen Jahren
         in ca. 50 Vorlesungen pro Semester eingesetzt. Der Ablauf ist für Lehrende denkbar einfach:
     </p>
 <ul>
@@ -49,7 +49,7 @@
 <p>
     <?= Studip\LinkButton::create(_('Anfrage stellen'),
         URLHelper::getURL('dispatch.php/messages/write',
-            ['rec_uname' => 'virtuos@studip',
+            ['rec_uname' => 'elz@studip',
                 'default_subject' => _('Anfrage Hörsaalaufzeichnung für '.Context::get()->Name),
                 'default_body' => _('Liebes virtUOS-Team,
 ich möchte im Hörsaal aufzeichnen.
@@ -63,7 +63,7 @@ Telefonnummer für Rückfragen:
 
 ')]),
         ['data-dialog' => '', 'data-action' => 'messages/write']) ?>
-    oder schreiben Sie eine E-Mail an: <a href="mailto:virtuos@uni-osnabrueck.de">virtuos@uni-osnabrueck.de</a>.
+    oder schreiben Sie eine E-Mail an: <a href="mailto:elearning@hs-wismar.de">elearning@hs-wismar.de</a>.
 </p>
 <p>
     Aufzeichnungen sind auch kurzfristig möglich!

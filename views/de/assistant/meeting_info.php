@@ -2,7 +2,7 @@
 <h2>Online-Sitzungen und Videokonferenzen: Beispiel</h2>
     <p>
         <img src="<?= $plugin->getPluginURL() ?>/assets/bbb-raum.jpg">
-        <br><span style="font-size:66%">Videokonferenz mit einem "BugBlueButton"-Server der Uni Osnabrück</span>
+        <br><span style="font-size:66%">Videokonferenz mit einem "BugBlueButton"-Server der HS Wismar</span>
     </span>
     </p>
     <p>

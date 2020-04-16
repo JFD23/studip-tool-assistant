@@ -2,7 +2,7 @@
 <h2>Online meetings and video conferencing: Example</h2>
     <p>
         <img src="<?= $plugin->getPluginURL() ?>/assets/bbb-raum.jpg">
-        <br><span style="font-size:66%">Videoconference with a "BigBlueButton" server of Osnabrück University</span>
+        <br><span style="font-size:66%">Videoconference with a "BigBlueButton" server of Hochschule Wismar</span>
     </span>
     </p>
     <p>
