@@ -319,6 +319,7 @@ Telefonnummer für Rückfragen:
                 <li>
                     <a href="<?= $controller->link_for('assistant/feedback_info/salmon') ?>" data-dialog="size=640x610">5-Stufen-Modell nach G. Salmon</a>
                 </li>
+                <br>
                 <li>
                     <a href="<?= $controller->link_for('assistant/feedback_info/verlauf') ?>" data-dialog="size=640x610">Nach Kursverlauf</a>
                 </li>
@@ -335,6 +336,7 @@ Telefonnummer für Rückfragen:
 </div>
 </section>
 
+<!--Ende Feedback Section -->
 
     <section class="assistant-section" style="clear: both;">
         <h1>
@@ -428,10 +430,11 @@ Telefonnummer für Rückfragen:
             <p style="text-aling:justify;">
               Wenn Sie gern mit anderen KollegInnen in Austausch zur Online-Lehre treten möchten, so empfehlen wir Ihnen den Beitritt zur Stud.IP Veranstaltung "Lehrendenschaft".
                 <br><br>
+              In dieser Veranstaltung finden Sie auch weitere Tutorials des E-Learning-Zentrums unter dem Reiter Courseware.
+                <br>
           </p>
 
-            <!--?= Studip\LinkButton::create(_('Kurs Lehrendenschaft beitreten'),
-                    URLHelper::getURL('dispatch.php/course/enrolment/apply', array('cid' => $this->50a39d9edb3348835b846683f3a76faf) ?>-->
+            <a href="https://studip.hs-wismar.de/dispatch.php/course/enrolment/apply/50a39d9edb3348835b846683f3a76faf" class="link-extern" target="_blank">Zum Kurs</a>
         </div>
     </section>
 </div>

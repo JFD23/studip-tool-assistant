@@ -294,6 +294,44 @@ Phone number for questions:
         </div>
     </section>
 
+    <!--### Feedback Section ###-->
+
+    <section class="assistant-section" style="clear: both;">
+        <h1>
+            Get Feedback
+        </h1>
+
+        <div class="accordion">
+            <h1>
+            Two theoretical approaches
+            </h1>
+
+            <div class="accordion_content">
+
+
+                <ul>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/feedback_info/salmon') ?>" data-dialog="size=640x610">5 step modell according to G. Salmon</a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/feedback_info/verlauf') ?>" data-dialog="size=640x610">Depending on course progress</a>
+                    </li>
+                </ul>
+            </div>
+
+      <h1>Two practical Tools</h1>
+        <div class="accordion_content">
+    <?= Studip\LinkButton::create(_('Forum anlegen'), $controller->url_for('assistant/forum')) ?>
+    <p>Asynchronously discuss problems and questions in the forum. This is useful in combination with asynchronous teaching methods.
+      <?= Studip\LinkButton::create(_('Losblubbern'), $controller->url_for('assistant/blubber')) ?>
+            <p>Synchronously discuss problems and questions in the blubber. Make an appointment with your students for a consultation hour with Blubber.
+        </div>
+    </div>
+    </section>
+
+    <!--Ende Feedback Section -->
+
     <section class="assistant-section" style="clear: both;">
         <h1>
             Tasks and homeworks
@@ -358,6 +396,41 @@ Phone number for questions:
                 ]), ['data-dialog' => '', 'data-action' => 'messages/write']) ?>
         </div>
     </section>
+
+    <section class="assistant-section">
+        <h1>
+            <?= Icon::create('cc', Icon::ROLE_INFO)->asImg(20, ['style' => 'vertical-align: text-bottom']) ?>
+            Credits
+        </h1>
+        <div class="assistant-infobox">
+            <p style="text-aling:justify;">
+                The E-Learning-Centre thanks the Centre for Digital Teaching, Campus Management and University Didactics (virtUOS) of Osnabrück University for programming this tool assistant.
+                <br><br>
+                <a href="https://www.virtuos.uni-osnabrueck.de" class="link-extern" target="_blank">Webseite von virtUOS</a><br><br>
+              Do you think that a tool is missing here? Please hand in a proposition.
+              </p>
+
+            <?= Studip\LinkButton::create(_('Hand in proposition'),
+                    URLHelper::getURL('dispatch.php/messages/write', ['rec_uname' => 'elz@studip']), ['data-dialog' => '', 'data-action' => 'messages/write']) ?>
+        </div>
+    </section>
+    <section class="assistant-section">
+        <h1>
+            <?= Icon::create('forum', Icon::ROLE_INFO)->asImg(20, ['style' => 'vertical-align: text-bottom']) ?>
+            Meetup with Colleagues
+        </h1>
+        <div class="assistant-infobox">
+            <p style="text-aling:justify;">
+              If you like to diskuss the possibilities of Online-Teaching with your Colleagues please join our course <i>Lehrendenschaft</i>.
+                <br><br>
+              Within this course you can find further tutorials of the E-Learning-Centre at the tab <i>Courseware</i>.
+                <br>
+          </p>
+
+            <a href="https://studip.hs-wismar.de/dispatch.php/course/enrolment/apply/50a39d9edb3348835b846683f3a76faf" class="link-extern" target="_blank">Join the course</a>
+        </div>
+    </section>
+
 </div>
 <script>
     $('.accordion').accordion({

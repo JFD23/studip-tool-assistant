@@ -7,19 +7,19 @@
     Typische Verwendungen sind:
 </p>
 <ul>
-    <li>I Zugang und Motivation</li>
+    <li><b>I Zugang und Motivation</b>
     <p>Rolle der E-Moderation: zum Begrüßen ermutigen
 Feedbackform: kleine Interaktionen wie „ja“ in Chats und Foren schreiben oder an Abstimmungen teilnehmen.</p>
-    <li>II Online Sozialisation</li>
+    <li><b>II Online Sozialisation</b>
 <p>Rolle der E-Moderation: Gewöhnungsübungen
 Feedbackform: Foren- und Chatbeitäge</p>
-    <li>III Informationsaustausch</li>
+    <li><b>III Informationsaustausch</b>
 <p>Rolle der E-Moderation: Aufgaben erleichtern, Lernmaterialien nutzen
 Feedbackform: Übungsbausteine, Forenbeiträge</p>
-<li>IV Wissenskonstruktion</li>
+<li><b>IV Wissenskonstruktion</b>
 <p>Rolle der E-Moderation: Prozess ermöglichen
 Feedbackform: Online diskutieren</p>
-<li>V Entwicklung</li>
+<li><b>V Entwicklung</b>
 <p>Rolle der E-Moderation: Unterstützen, Reagieren
 Feedbackform: </p>
 </ul>
