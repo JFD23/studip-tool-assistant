@@ -390,7 +390,7 @@ Telefonnummer für Rückfragen:
                     Ihre Lehre auf viele weitere Arten unterstützen. Sprechen Sie uns einfach an:
                 <br><br>
                 <a href="mailto:elearning@hs-wismar.de">elearning@hs-wismar.de</a><br>
-                Tel. 03841/753-7805<br>
+                Tel. 03841/753-7805 oder 03841/753-7710<br>
                 <a href="https://intern.hs-wismar.de/hochschule/stabsstellen-des-rektorats/e-learning-zentrum/kommunikation-in-corona-zeiten/" class="link-extern" target="_blank"
                     >COVID-19: Hinweise zum Einsatz Digitaler Lehre
                 </a><br>
@@ -399,6 +399,39 @@ Telefonnummer für Rückfragen:
 
             <?= Studip\LinkButton::create(_('Anfrage stellen'),
                     URLHelper::getURL('dispatch.php/messages/write', ['rec_uname' => 'elz@studip']), ['data-dialog' => '', 'data-action' => 'messages/write']) ?>
+        </div>
+    </section>
+
+    <section class="assistant-section">
+        <h1>
+            <?= Icon::create('cc', Icon::ROLE_INFO)->asImg(20, ['style' => 'vertical-align: text-bottom']) ?>
+            Danksagung
+        </h1>
+        <div class="assistant-infobox">
+            <p style="text-aling:justify;">
+                Das E-Learning-Zentrum bedankt sich beim Zentrum für Digitale Lehre, Campus-Management und Hochschuldidaktik (virtUOS), die diesen Tool-Assistenten programmiert hat.
+                <br><br>
+                <a href="https://www.virtuos.uni-osnabrueck.de" class="link-extern" target="_blank">Webseite von virtUOS</a><br><br>
+                Wenn Ihnen noch ein Tool an dieser Stelle fehlt und Ihrer Meinung vorgestellt werden sollte, schicken Sie uns gern einen Vorschlag:
+              </p>
+
+            <?= Studip\LinkButton::create(_('Vorschlag einreichen'),
+                    URLHelper::getURL('dispatch.php/messages/write', ['rec_uname' => 'elz@studip']), ['data-dialog' => '', 'data-action' => 'messages/write']) ?>
+        </div>
+    </section>
+    <section class="assistant-section">
+        <h1>
+            <?= Icon::create('forum', Icon::ROLE_INFO)->asImg(20, ['style' => 'vertical-align: text-bottom']) ?>
+            Austausch mit KollegInnen
+        </h1>
+        <div class="assistant-infobox">
+            <p style="text-aling:justify;">
+              Wenn Sie gern mit anderen KollegInnen in Austausch zur Online-Lehre treten möchten, so empfehlen wir Ihnen den Beitritt zur Stud.IP Veranstaltung "Lehrendenschaft".
+                <br><br>
+          </p>
+
+            <!--?= Studip\LinkButton::create(_('Kurs Lehrendenschaft beitreten'),
+                    URLHelper::getURL('dispatch.php/course/enrolment/apply', array('cid' => $this->50a39d9edb3348835b846683f3a76faf) ?>-->
         </div>
     </section>
 </div>

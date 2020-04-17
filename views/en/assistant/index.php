@@ -74,7 +74,7 @@
                 Good teaching without a classroom!?</em>
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Didactical remarks'), 'https://www.virtuos.uni-osnabrueck.de/hochschuldidaktik/gute_lehre_ohne_praesenz.html', ['target' => '_blank', 'data-action' => 'tips/gute_lehre']) ?>
+                <?= Studip\LinkButton::create(_('Didactical remarks'), 'https://www.hs-wismar.de/en/university/einrichtungen/e-learning-centre/develop-teaching/', ['target' => '_blank', 'data-action' => 'tips/gute_lehre']) ?>
                 <p>We have put together some didactic hints and suggestions so that you can adapt your teaching to the current conditions
                     and the increased demands on the students' self-learning skills as well as possible. </p>
 
