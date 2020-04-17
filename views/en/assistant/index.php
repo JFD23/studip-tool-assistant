@@ -307,8 +307,6 @@ Phone number for questions:
             </h1>
 
             <div class="accordion_content">
-
-
                 <ul>
                     <li>
                         <a href="<?= $controller->link_for('assistant/feedback_info/salmon') ?>" data-dialog="size=640x610">5 step modell according to G. Salmon</a>
@@ -322,9 +320,9 @@ Phone number for questions:
 
       <h1>Two practical Tools</h1>
         <div class="accordion_content">
-    <?= Studip\LinkButton::create(_('Forum anlegen'), $controller->url_for('assistant/forum')) ?>
+    <?= Studip\LinkButton::create(_('Create a Forum'), $controller->url_for('assistant/forum')) ?>
     <p>Asynchronously discuss problems and questions in the forum. This is useful in combination with asynchronous teaching methods.
-      <?= Studip\LinkButton::create(_('Losblubbern'), $controller->url_for('assistant/blubber')) ?>
+      <?= Studip\LinkButton::create(_('Start Blubbering'), $controller->url_for('assistant/blubber')) ?>
             <p>Synchronously discuss problems and questions in the blubber. Make an appointment with your students for a consultation hour with Blubber.
         </div>
     </div>
@@ -384,7 +382,7 @@ Phone number for questions:
                 We have only presented the most basic scenarios here. With Stud.IP and other services you can
                 support your teaching in many more ways. Please feel free to contact us:
                 <br><br>
-                <a href="mailto:elearning@hs-wismar.de">elearning@hs-wismar.de</a><br>
+                <a href="mailto:elearning@hs-wismar.de" class="link_e" >elearning@hs-wismar.de</a><br>
                 Tel. 03841/753 7805<br>
                 <a href="https://intern.hs-wismar.de/hochschule/stabsstellen-des-rektorats/e-learning-zentrum/kommunikation-in-corona-zeiten/" class="link-extern" target="_blank">COVID-19: Notes on the use of digital teaching </a><br>
                 <a href="https://www.hs-wismar.de/en/university/einrichtungen/itsmz/it-info/working-on-the-go/" class="link-extern" target="_blank">Home office services provided by the ITSMC</a>
