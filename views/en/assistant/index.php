@@ -251,11 +251,11 @@ Phone number for questions:
                     </li>
                 </ul>
             </div>
-
+<!--
             <h1>
                 Continuous group communication (Messenger)
             </h1>
-          <!--  <div class="accordion_content">
+            <div class="accordion_content">
                 = Studip\LinkButton::create(_('Open messenger'), $controller->url_for('mail')) ?>
                 <div style="float:right;margin-left:10px;">
                     <img src="<?= $plugin->getPluginURL() ?>/assets/studip-riot.jpg" width="160">
@@ -386,8 +386,8 @@ Phone number for questions:
                 <br><br>
                 <a href="mailto:elearning@hs-wismar.de">elearning@hs-wismar.de</a><br>
                 Tel. 03841/753 7805<br>
-                <a href="https://intern.hs-wismar.de/hochschule/stabsstellen-des-rektorats/e-learning-zentrum/kommunikation-in-corona-zeiten/" class="link-external" target="_blank">COVID-19: Notes on the use of digital teaching </a><br>
-                <a href="https://www.hs-wismar.de/en/university/einrichtungen/itsmz/it-info/working-on-the-go/" class="link-external" target="_blank">Home office services provided by the ITSMC</a>
+                <a href="https://intern.hs-wismar.de/hochschule/stabsstellen-des-rektorats/e-learning-zentrum/kommunikation-in-corona-zeiten/" class="link-extern" target="_blank">COVID-19: Notes on the use of digital teaching </a><br>
+                <a href="https://www.hs-wismar.de/en/university/einrichtungen/itsmz/it-info/working-on-the-go/" class="link-extern" target="_blank">Home office services provided by the ITSMC</a>
             </p>
 
             <?= Studip\LinkButton::create(_('Send a request'),
@@ -406,7 +406,7 @@ Phone number for questions:
             <p style="text-aling:justify;">
                 The E-Learning-Centre thanks the Centre for Digital Teaching, Campus Management and University Didactics (virtUOS) of Osnabrück University for programming this tool assistant.
                 <br><br>
-                <a href="https://www.virtuos.uni-osnabrueck.de" class="link-extern" target="_blank">Webseite von virtUOS</a><br><br>
+                <a href="https://www.virtuos.uni-osnabrueck.de" class="link-extern" target="_blank">Website of virtUOS</a><br><br>
               Do you think that a tool is missing here? Please hand in a proposition.
               </p>
 
