@@ -92,7 +92,7 @@
     </section>
 
     <section class="assistant-section">
-        <h1>
+      <!--  <h1>
             Online lectures (e.g. for lectures)
         </h1>
 
@@ -127,7 +127,7 @@ Phone number for questions:
                     </li>
                 </ul>
             </div>
-
+-->
             <h1>
                 Recording in the studio
             </h1>
@@ -315,6 +315,9 @@ Phone number for questions:
                     <li>
                         <a href="<?= $controller->link_for('assistant/feedback_info/verlauf') ?>" data-dialog="size=640x610">Depending on course progress</a>
                     </li>
+                    <li>
+                      <a href="<?= $controller->link_for('assistant/feedback_info/howto') ?>" data-dialog="size=640x610">Explanatory video</a>
+                    </li>
                 </ul>
             </div>
 
@@ -379,13 +382,12 @@ Phone number for questions:
         </h1>
         <div class="assistant-infobox">
             <p style="text-aling:justify;">
-                We have only presented the most basic scenarios here. With Stud.IP and other services you can
-                support your teaching in many more ways. Please feel free to contact us:
+                Here we only present the most basic scenarios. There are far more ways to support your teaching by using Stud.IP and other services. For further information please feel free to contact us:
                 <br><br>
                 <a href="mailto:elearning@hs-wismar.de" class="link_e" >elearning@hs-wismar.de</a><br>
                 Tel. 03841/753 7805<br>
                 <a href="https://intern.hs-wismar.de/hochschule/stabsstellen-des-rektorats/e-learning-zentrum/kommunikation-in-corona-zeiten/" class="link-extern" target="_blank">COVID-19: Notes on the use of digital teaching </a><br>
-                <a href="https://www.hs-wismar.de/en/university/einrichtungen/itsmz/it-info/working-on-the-go/" class="link-extern" target="_blank">Home office services provided by the ITSMC</a>
+                <a href="https://www.hs-wismar.de/en/university/einrichtungen/itsmz/it-info/working-on-the-go/" class="link-extern" target="_blank">Services for mobile work provided by the ITSMC</a>
             </p>
 
             <?= Studip\LinkButton::create(_('Send a request'),
@@ -402,10 +404,10 @@ Phone number for questions:
         </h1>
         <div class="assistant-infobox">
             <p style="text-aling:justify;">
-                The E-Learning-Centre thanks the Centre for Digital Teaching, Campus Management and University Didactics (virtUOS) of Osnabrück University for programming this tool assistant.
+                The E-Learning Centre would like to thank the Centre for Digital Teaching, Campus Management and University Didactics (virtUOS) of Osnabrück University for creating this tool assistant.
                 <br><br>
                 <a href="https://www.virtuos.uni-osnabrueck.de" class="link-extern" target="_blank">Website of virtUOS</a><br><br>
-              Do you think that a tool is missing here? Please hand in a proposition.
+              You think that a tool is missing here? Please let us know and hand in a proposition.
               </p>
 
             <?= Studip\LinkButton::create(_('Hand in proposition'),
@@ -419,9 +421,9 @@ Phone number for questions:
         </h1>
         <div class="assistant-infobox">
             <p style="text-aling:justify;">
-              If you like to diskuss the possibilities of Online-Teaching with your Colleagues please join our course <i>Lehrendenschaft</i>.
+              If you like to discuss the possibilities of online teaching with your colleagues please join our course <i>Lehrendenschaft</i>.
                 <br><br>
-              Within this course you can find further tutorials of the E-Learning-Centre at the tab <i>Courseware</i>.
+              Within this course you can also find useful tutorials at the tab <i>Courseware</i>.
                 <br>
           </p>
 

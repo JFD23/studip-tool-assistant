@@ -95,8 +95,8 @@
             Online-Vorträge (z.B. für Vorlesungen)
         </h1>
 
-        <div class="accordion">
-            <h1>
+       <div class="accordion">
+          <!--  <h1>
                 Aufzeichnungen im Hörsaal ohne Publikum
             </h1>
             <div class="accordion_content">
@@ -126,7 +126,7 @@ Telefonnummer für Rückfragen:
                     </li>
                 </ul>
             </div>
-
+-->
             <h1>
                 Aufzeichnung im Studio
             </h1>
@@ -323,6 +323,10 @@ Telefonnummer für Rückfragen:
                 <li>
                     <a href="<?= $controller->link_for('assistant/feedback_info/verlauf') ?>" data-dialog="size=640x610">Nach Kursverlauf</a>
                 </li>
+                <br>
+                <li>
+                    <a href="<?= $controller->link_for('assistant/feedback_info/howto') ?>" data-dialog="size=640x610">Erklärfilm</a>
+                </li>
             </ul>
         </div>
 
@@ -411,7 +415,7 @@ Telefonnummer für Rückfragen:
         </h1>
         <div class="assistant-infobox">
             <p style="text-aling:justify;">
-                Das E-Learning-Zentrum bedankt sich beim Zentrum für Digitale Lehre, Campus-Management und Hochschuldidaktik (virtUOS), die diesen Tool-Assistenten programmiert hat.
+                Das E-Learning-Zentrum bedankt sich beim Zentrum für Digitale Lehre, Campus-Management und Hochschuldidaktik (virtUOS), das diesen Tool-Assistenten programmiert hat.
                 <br><br>
                 <a href="https://www.virtuos.uni-osnabrueck.de" class="link-extern" target="_blank">Webseite von virtUOS</a><br><br>
                 Wenn Ihnen noch ein Tool an dieser Stelle fehlt und Ihrer Meinung vorgestellt werden sollte, schicken Sie uns gern einen Vorschlag:

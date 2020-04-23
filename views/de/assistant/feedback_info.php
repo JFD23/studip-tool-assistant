@@ -40,4 +40,11 @@ Feedbackform: </p>
             <br>  - über den Übungsbaustein (ILIAS) und Aufgaben (Stud.IP) gibt es die Möglichkeit einzelnen Lernenden eine Rückmeldung in Form einer überarbeiteten Datei oder einem Text zu geben.
               <br>&nbsp;</li>
         </ul>
+      <? elseif ($view === 'howto'): ?>
+      <h2>Feedback in der Online-Lehre</h2>
+
+      <iframe width="560" height="315" src="https://media.hs-wismar.de/static/mh_default_org/engage-player/92fa7a46-6add-466c-8271-91aa2ea25c2d/3e29b3ca-ec91-40ba-9f53-b51c6776bc74/concat.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p font-size="50%">by Christopher Könitz, E-Learning-Zentrum 2020<br>
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons -
+              Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a></p>
   <? endif ?>
