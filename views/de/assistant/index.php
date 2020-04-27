@@ -57,16 +57,16 @@
             </h1>
             <div class="accordion_content">
                 <?= Studip\LinkButton::create(_('Corona-Infoseite einrichten'), $controller->url_for('assistant/corona')) ?>
-                <p>Informieren Sie Ihre Teilnehmenden gut sichtbar darüber, wie Ihr Kurs in das Semester startet.</p>
-                <p>Wir haben eine Vorlage für das Stud.IP-Modul "Informationen" erstellt mit der Sie die wichtigsten Informationen und Fragen strukturiert hinterlegen können.</p>
-                <!--<ul>
+                <p>Informieren Sie Ihre Teilnehmenden gut sichtbar darüber, wie Ihr Kurs in diesem Semester abläuft.</p>
+                <p>Wir haben eine Vorlage für das Stud.IP-Modul "Informationen" erstellt, mit der Sie die wichtigsten Informationen und Fragen strukturiert hinterlegen können.</p>
+                <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/corona_info/howto') ?>" data-dialog="size=640x600">So geht's') ?></a>
+                        <a href="<?= $controller->link_for('assistant/corona_info/howto') ?>" data-dialog="size=640x600">So geht's</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/corona_info/tips') ?>" data-dialog="size=640x400">Tipps und Tricks') ?></a>
+                        <a href="<?= $controller->link_for('assistant/corona_info/tips') ?>" data-dialog="size=640x400">Tipps und Tricks</a>
                     </li>
-                </ul>-->
+                </ul>
             </div>
 
             <h1>
@@ -132,15 +132,15 @@ Telefonnummer für Rückfragen:
             </h1>
             <div class="accordion_content">
                 <?= Studip\LinkButton::create(_('Weitere Informationen'),
-                    'https://www.hs-wismar.de/hochschule/information/presse-medien/informationen-zum-coronavirus/',
+                    'https://www.hs-wismar.de/hochschule/einrichtungen/e-learning-zentrum/produktionsstudio-pela/',
                     ["target"=>"_blank", 'data-action' => 'tips/covid']) ?>
                 <p>
-                    Die Hochschule Wismar betreibt das PELA Videostudio im ITSMZ Raum 104.
-                    Hier können mit Unterstützung / Einweisung durch MitarbeiterInnen des E-Learning-Zentrums Videos in überdurchschnittlicher
+                    Die Hochschule Wismar betreibt das <b>PELA</b> Videostudio im ITSMZ Raum 104.
+                    Hier können mit Unterstützung und Einweisung durch MitarbeiterInnen des E-Learning-Zentrums Videos in überdurchschnittlicher
                     Qualität produziert werden.
                 </p>
                 <ul>
-                    <li><a href="<?= $controller->link_for('assistant/studio_info/selfrecording') ?>" data-dialog="size=640x500">Impressionen aus dem PELA</a></li>
+                    <li><a href="<?= $controller->link_for('assistant/studio_info/selfrecording') ?>" data-dialog="size=640x500">Produktionsbeispiele aus dem <b>PELA</b></a></li>
                 </ul>
 
                 <p>
@@ -159,9 +159,6 @@ Telefonnummer für Rückfragen:
                 <ul>
                     <li>
                         <a href="<?= $controller->link_for('assistant/recording_info/opencaststudio') ?>" data-dialog="size=640x600">Opencast Studio (Unsere Empfehlung!)</a>
-                    </li>
-                    <li>
-                        <a href="https://lernfunk.de/#/recordings/4222b950-6107-4d4c-a3ed-00dd8d5fac6e" class="link-extern" target="_blank">Opencast-Studio: Anleitungsvideo</a>
                     </li>
                     <li>
                         <a href="<?= $controller->link_for('assistant/recording_info/powerpoint') ?>" data-dialog="size=640x500">Aufnahmen direkt in Powerpoint</a>
@@ -191,8 +188,10 @@ Telefonnummer für Rückfragen:
                         <a href="<?= $controller->link_for('assistant/oer_info/example') ?>" data-dialog="size=850x630">Links und Portale</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/oer_info/howto') ?>" data-dialog="size=640x550">Erklärvideo (Youtube)</a>
-
+                        <a href="<?= $controller->link_for('assistant/oer_info/howto') ?>" data-dialog="size=640x550">Erklärvideo CreativeCommons</a>
+                    </li>
+                    <li>
+                        <a href="https://www.hs-wismar.de/hochschule/einrichtungen/e-learning-zentrum/medienrecht-in-der-lehre/freie-materialien/" class="link-extern" target="_blank">Mehr Infos auf den Seiten des E-Learning-Zentrums</a>
                     </li>
                 </ul>
             </div>
@@ -202,7 +201,7 @@ Telefonnummer für Rückfragen:
             </h1>
             <div class="accordion_content">
                 <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('assistant/courseware')) ?>
-                <p>Mit dem Stud.IP-Plugin "Courseware" können Sie vielfältige Quellen zusammenführen und interaktive multimediale Lernmodule erstellen.</p>
+                <p>Mit dem Stud.IP-Plugin "Courseware" können Sie vielfältige Quellen zusammenführen und ganz einfach interaktive Lernmodule erstellen.</p>
                 <ul>
                     <li>
                         <a href="<?= $controller->link_for('assistant/courseware_info/example') ?>" data-dialog="size=640x400">Beispiel</a>
@@ -227,6 +226,9 @@ Telefonnummer für Rückfragen:
                     </li>
                     <li>
                         <a href="<?= $controller->link_for('assistant/copyright_info/teaching') ?>" data-dialog="size=640x450">Was darf ich in der Lehre nutzen?</a>
+                    </li>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/copyright_info/files') ?>" data-dialog="size=640x450">Tutorial: Stud.IP Dateibereich nutzen</a>
                     </li>
                 </ul>
             </div>
@@ -314,10 +316,10 @@ Telefonnummer für Rückfragen:
 
         <div class="accordion_content">
 
-
+<p>Stud.IP ermöglicht es Ihnen auf vielen Ebenen Feedback einzuholen, so dass Sie Ihre Studierenden unterstützen und die Online-Lehre während des Semesters evaluieren können. </p><br>
             <ul>
                 <li>
-                    <a href="<?= $controller->link_for('assistant/feedback_info/salmon') ?>" data-dialog="size=640x610">5-Stufen-Modell nach G. Salmon</a>
+                  <a href="<?= $controller->link_for('assistant/feedback_info/howto') ?>" data-dialog="size=640x610">Video: Feedbackformen</a>
                 </li>
                 <br>
                 <li>
@@ -325,7 +327,7 @@ Telefonnummer für Rückfragen:
                 </li>
                 <br>
                 <li>
-                    <a href="<?= $controller->link_for('assistant/feedback_info/howto') ?>" data-dialog="size=640x610">Erklärfilm</a>
+                    <a href="<?= $controller->link_for('assistant/feedback_info/salmon') ?>" data-dialog="size=640x610">5-Stufen-Modell nach G. Salmon</a>
                 </li>
             </ul>
         </div>
@@ -333,9 +335,9 @@ Telefonnummer für Rückfragen:
   <h1>Zwei praktische Tools</h1>
     <div class="accordion_content">
 <?= Studip\LinkButton::create(_('Forum anlegen'), $controller->url_for('assistant/forum')) ?>
-<p>Asynchron Probleme und Fragen diskutieren im Forum. Dies ist in Kombination mit asynchronen Lehrformen sinnvoll.
+<p>Das Forum ist ideal für zeitversetzte (asynchrone) Lehrformate. Zudem eignet es sich, um Fragen und Diskussionen im Team zu strukturieren und zu moderieren.
   <?= Studip\LinkButton::create(_('Losblubbern'), $controller->url_for('assistant/blubber')) ?>
-        <p>Synchron Probleme und Fragen diskutieren im Blubber. Verabreden Sie sich mit Ihren Studierenden zu einer Sprechstunde im Blubber.
+        <p>Blubber eignet sich für die synchrone wie auch asynchrone Kommunikation. Dieses Tool ist daher ideal für Chat-Sprechstunden und Diskussionen.
     </div>
 </div>
 </section>

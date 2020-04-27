@@ -37,5 +37,9 @@
     <p>
         Im Detail gibt es noch viele weitere Fragen. Wir empfehlen dazu den Leitfaden "Urheberrechts-FAQ Hochschullehre" von Achim Förster: <a href="https://urheberrecht.fhws.de/faq-urheberrecht/"  class="link-extern" target="_blank">https://urheberrecht.fhws.de/faq-urheberrecht/</a>.
     </p>
-
+<? elseif ($view === 'files'): ?>
+  <h2> Tutorial: Den Dateibereich von Stud.IP nutzen</h2>
+    <div style="margin-left:10px;float:left">
+  <iframe width="560" height="315" src="https://media.hs-wismar.de/static/mh_default_org/engage-player/cf02b712-c572-44c5-8f2f-4d424f148cbe/72e7831c-94fc-43ce-b05b-0b967817b7d5/concat.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 <? endif ?>

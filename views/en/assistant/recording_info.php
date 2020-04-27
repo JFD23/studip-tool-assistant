@@ -12,7 +12,7 @@
         After the recording in Opencast Studio it will be uploaded to the Hochschule Wismar Opencast servers and are made available to students in their Stud.IP course automatically.
     </p>
     <p>
-        The university has sufficient capacity to enable the above-mentioned recordings with this technology as well.
+        Hochschule Wismar has sufficient capacity to enable the above-mentioned recordings with this technology as well.
         The effort for lecturers is a bit higher, because they have to operate the recording technology themselves to create the videos.
         On the other hand, the recordings can be made at any location that has a sufficiently fast network connection.
         We recommend using Opencast Studio to create smaller videos on individual topics,
