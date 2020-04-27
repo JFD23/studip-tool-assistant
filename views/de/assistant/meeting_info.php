@@ -2,7 +2,7 @@
 <h2>Online-Sitzungen und Videokonferenzen: Beispiel</h2>
     <p>
         <img src="<?= $plugin->getPluginURL() ?>/assets/bbb-raum.jpg">
-        <br><span style="font-size:66%">Videokonferenz mit einem "BugBlueButton"-Server der HS Wismar</span>
+        <br><span style="font-size:66%">Videokonferenz mit dem "BigBlueButton"-Server der HS Wismar</span>
     </span>
     </p>
     <p>
@@ -32,7 +32,7 @@ Sie werden aufgefordert, zu entscheiden, ob Sie Ihr Mikrofon aktiveren oder nur 
     </ol>
 <p>&nbsp;</p>
     <p>Weitere Informationen zur Nutzung von BigBlueButton finden Sie unter <br>
-            <a href="https://www.hs-wismar.de/hochschule/einrichtungen/itsmz/it-info/telefonie-und-videokonferenzen/virtuelle-klassenzimmer-bigbluebutton/">BigBlueButton auf hs-wismar.de/it-info</a></p>
+            <a href="https://www.hs-wismar.de/hochschule/einrichtungen/itsmz/it-info/telefonie-und-videokonferenzen/virtuelle-klassenzimmer-bigbluebutton/" class="link-extern" target="_blank">BigBlueButton auf hs-wismar.de/it-info</a></p>
     <p>
         Hinweise:
         <ul>
@@ -47,5 +47,5 @@ Sie werden aufgefordert, zu entscheiden, ob Sie Ihr Mikrofon aktiveren oder nur 
         <li>Über die Videokonferenz können Sie Ihren Bildschirm allen Teilnehmenden sichtbar machen, z.B. für Präsentationen, gemeinsame Dokumente etc.<br>&nbsp;</li>
     </ul>
     <p>Weitere Informationen zur Nutzung von BigBlueButton finden Sie unter <br>
-            <a href="https://www.hs-wismar.de/hochschule/einrichtungen/itsmz/it-info/telefonie-und-videokonferenzen/virtuelle-klassenzimmer-bigbluebutton/">BigBlueButton auf hs-wismar.de/it-info</a></p>
+            <a href="https://www.hs-wismar.de/hochschule/einrichtungen/itsmz/it-info/telefonie-und-videokonferenzen/virtuelle-klassenzimmer-bigbluebutton/" class="link-extern" target="_blank">BigBlueButton auf hs-wismar.de/it-info</a></p>
 <? endif ?>
