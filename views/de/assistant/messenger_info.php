@@ -22,5 +22,3 @@
     Die Nutzung mit externen Apps ist nicht möglich, Blubber ist nur innerhalb von Stud.IP erreichbar.
 </p>
 <? endif ?>
-
-

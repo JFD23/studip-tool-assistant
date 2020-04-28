@@ -10,13 +10,7 @@
                 (Stud.IP: Nachrichten)
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Rundmail schreiben'),
-                        URLHelper::getURL('dispatch.php/messages/write', [
-                            'course_id'       => $course_id,
-                            'default_subject' => sprintf('[%s]', Context::get()->Name),
-                            'filter'          => 'all',
-                            'emailrequest'    => 1
-                        ]), ['data-dialog' => '', 'data-action' => 'messages/write_all']) ?>
+
                 <p>Über Stud.IP-Nachrichten können Sie allen eingetragenen Kurs-Teilnehmenden Informationen zukommen lassen.</p>
                 <ul>
                     <li>
@@ -29,14 +23,23 @@
                         <a href="<?= $controller->link_for('assistant/mail_info/tips') ?>" data-dialog="size=640x600;title='Online-Lehre: Teilnehmende benachrichtigen'">Tipps und Tricks</a>
                     </li>
                 </ul>
-            </div>
-
+                <br>
+                  <div id="Button" style="float:left;">
+                    <?= Studip\LinkButton::create(_('Rundmail schreiben'),
+                        URLHelper::getURL('dispatch.php/messages/write', [
+                            'course_id'       => $course_id,
+                            'default_subject' => sprintf('[%s]', Context::get()->Name),
+                            'filter'          => 'all',
+                            'emailrequest'    => 1
+                        ]), ['data-dialog' => '', 'data-action' => 'messages/write_all']) ?>
+                  </div>
+              </div>
             <h1>
                 Materialien online bereitstellen
                 (Stud.IP: Dateien)
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Datei hochladen'), '#', ['onclick' => "STUDIP.Files.openAddFilesWindow('$folder_id')", 'data-action' => 'files/upload']) ?>
+
                 <p> Im Stud.IP-Dateibereich können Dateien hochgeladen und verlinkt werden. Mit dem "Courseware"-Modul können Sie verschiedene Medien zusammenführen (s. "Materialien zusammenstellen"). </p>
                 <ul>
                     <li>
@@ -49,6 +52,9 @@
                         <a href="<?= $controller->link_for('assistant/files_info/tips') ?>" data-dialog="size=640x400;title='Online-Lehre: Material onloine bereitstellen'">Tipps und Tricks</a>
                     </li>
                 </ul>
+                <div id="Button" style="float:left;">
+              <?= Studip\LinkButton::create(_('Datei hochladen'), '#', ['onclick' => "STUDIP.Files.openAddFilesWindow('$folder_id')", 'data-action' => 'files/upload']) ?>
+            </div>
             </div>
 
             <h1>
@@ -56,7 +62,6 @@
                 (Stud.IP: Informationen)</em>
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Corona-Infoseite einrichten'), $controller->url_for('assistant/corona')) ?>
                 <p>Informieren Sie Ihre Teilnehmenden gut sichtbar darüber, wie Ihr Kurs in diesem Semester abläuft.</p>
                 <p>Wir haben eine Vorlage für das Stud.IP-Modul "Informationen" erstellt, mit der Sie die wichtigsten Informationen und Fragen strukturiert hinterlegen können.</p>
                 <ul>
@@ -67,16 +72,20 @@
                         <a href="<?= $controller->link_for('assistant/corona_info/tips') ?>" data-dialog="size=640x400">Tipps und Tricks</a>
                     </li>
                 </ul>
+                <div id="Button" style="float:left;">
+                <?= Studip\LinkButton::create(_('Corona-Infoseite einrichten'), $controller->url_for('assistant/corona')) ?>
+                </div>
             </div>
 
             <h1>
                 Gute Lehre ohne Präsenz!?</em>
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Hinweise zur Didaktik'), 'https://www.hs-wismar.de/hochschule/einrichtungen/e-learning-zentrum/lehre-weiterentwickeln/', ['target' => '_blank', 'data-action' => 'tips/gute_lehre']) ?>
+
                 <p>Wir haben einige didaktische Hinweise und Anregungen zusammengetragen, damit Sie Ihre Lehre möglichst gut an die aktuellen Gegebenheiten anpassen
                     und den erhöhten Anforderungen an Selbstlernkompetenzen der Studierenden Rechnung tragen können. </p>
-
+                <div id="Button" style="float:left;">
+                <?= Studip\LinkButton::create(_('Hinweise zur Didaktik'), 'https://www.hs-wismar.de/hochschule/einrichtungen/e-learning-zentrum/lehre-weiterentwickeln/', ['target' => '_blank', 'data-action' => 'tips/gute_lehre']) ?>
                 <!--<ul>
                     <li>
                         <a href="<?= $controller->link_for('assistant/corona_info/howto') ?>" data-dialog="size=640x600">So geht's') ?></a>
@@ -86,8 +95,7 @@
                     </li>
                 </ul>-->
             </div>
-
-        </div>
+          </div>
     </section>
 
     <section class="assistant-section">
@@ -361,7 +369,6 @@ Telefonnummer für Rückfragen:
                     <li>
                         <a href="<?= $controller->link_for('assistant/homework_info/howto') ?>" data-dialog="size=640x500">So geht's</a>
                     </li>
-
                 </ul>
             </div>
 
