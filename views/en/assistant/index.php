@@ -10,13 +10,6 @@
                 (Stud.IP: Message to all)
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Write circular e-mail'),
-                    URLHelper::getURL('dispatch.php/messages/write', [
-                        "course_id" => $course_id,
-                        'default_subject' => sprintf('[%s]', Context::get()->Name),
-                        "filter" => "all",
-                        "email request" => 1
-                    ]), ['data-dialog' => '', 'data-action' => 'messages/write_all']) ?>
                 <p>You can send information to all registered course participants via Stud.IP messages.</p>
                 <ul>
                     <li>
@@ -29,6 +22,15 @@
                         <a href="<?= $controller->link_for('assistant/mail_info/tips') ?>" data-dialog="size=640x600;title='Teach online: Notify participants'">Tips and tricks</a>
                     </li>
                 </ul>
+                <div style="float:left;">
+                  <?= Studip\LinkButton::create(_('Write circular e-mail'),
+                      URLHelper::getURL('dispatch.php/messages/write', [
+                          "course_id" => $course_id,
+                          'default_subject' => sprintf('[%s]', Context::get()->Name),
+                          "filter" => "all",
+                          "email request" => 1
+                      ]), ['data-dialog' => '', 'data-action' => 'messages/write_all']) ?>
+                </div>
             </div>
 
             <h1>
@@ -36,7 +38,6 @@
                 (Stud.IP: Files)
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create('Upload file', '#', ['onclick' => "STUDIP.Files.openAddFilesWindow('$folder_id')", 'data-action' => 'files/upload']) ?>
                 <p> In the Stud.IP file area files can be uploaded and linked. With the "Courseware" module,
                     you can merge and compile different media (see "Compiling materials"). </p>
                 <ul>
@@ -50,6 +51,9 @@
                         <a href="<?= $controller->link_for('assistant/files_info/tips') ?>" data-dialog="size=640x400;title='Teach online: Provide materials online'">Tips and tricks</a>
                     </li>
                 </ul>
+                <div style="float:left;">
+                <?= Studip\LinkButton::create('Upload file', '#', ['onclick' => "STUDIP.Files.openAddFilesWindow('$folder_id')", 'data-action' => 'files/upload']) ?>
+              </div>
             </div>
 
             <h1>
@@ -57,24 +61,25 @@
                 (Stud.IP: Information)</em>
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create('Set up corona info page', $controller->url_for('assistant/corona')) ?>
                 <p> Inform your participants about how your course starts into the semester.</p>
                 <p>We have created a template that lets you provide the most important information and answers to questions in a structured way.</p>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/corona_info/howto') ?>" data-dialog="size=640x600">This is how</a>
+                        <a href="<?= $controller->link_for('assistant/corona_info/howto') ?>" data-dialog="size=640x600">This is how it works</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/corona_info/tips') ?>" data-dialog="size=640x400">tips and tricks</a>
+                        <a href="<?= $controller->link_for('assistant/corona_info/tips') ?>" data-dialog="size=640x400">Tips and tricks</a>
                     </li>
                 </ul>
+<div style="float:left;">
+<?= Studip\LinkButton::create('Set up corona info page', $controller->url_for('assistant/corona')) ?>
+</div>
             </div>
 
             <h1>
                 Good teaching without a classroom!?</em>
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Didactical remarks'), 'https://www.hs-wismar.de/en/university/einrichtungen/e-learning-centre/develop-teaching/', ['target' => '_blank', 'data-action' => 'tips/gute_lehre']) ?>
                 <p>We have put together some didactic hints and suggestions so that you can adapt your teaching to the current conditions
                     and the increased demands on the students' self-learning skills as well as possible. </p>
 
@@ -86,8 +91,10 @@
                         <a href="<?= $controller->link_for('assistant/corona_info/tips') ?>" data-dialog="size=640x400">tips and tricks') ?></a>
                     </li>
                 </ul>-->
+<div style="float:left;">
+  <?= Studip\LinkButton::create(_('Didactical remarks'), 'https://www.hs-wismar.de/en/university/einrichtungen/e-learning-centre/develop-teaching/', ['target' => '_blank', 'data-action' => 'tips/gute_lehre']) ?>
+</div>
             </div>
-
         </div>
     </section>
 
@@ -132,25 +139,29 @@ Phone number for questions:
                 Recording in the studio
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Further information'),
-                    'https://www.hs-wismar.de/en/university/einrichtungen/e-learning-centre/production-studio-pela/',
-                    ["target"=>"_blank", 'data-action' => 'tips/covid']) ?>
                 <p>
                     Hochschule Wismar runs the <b>PELA</b> studio in room 26/104 in the ITSMC.
-                    Here, with the support and instruction of the E-Learning-Centre staff, you can produce videos in above-average
+                    Here, with the support and instruction of the E-Learning Centre staff, you can produce videos in above-average
                     quality.
                 </p>
-                <p>
+                <ul>
+                    <li><a href="<?= $controller->link_for('assistant/studio_info/selfrecording') ?>" data-dialog="size=640x500"><b>PELA</b> show cases</a></li>
+                </ul>
+                <div style="float:left;">
+                  <?= Studip\LinkButton::create(_('Booking and information'),
+                      'https://www.hs-wismar.de/en/university/einrichtungen/e-learning-centre/production-studio-pela/',
+                      ["target"=>"_blank", 'data-action' => 'tips/covid']) ?>
+                </div>
+                <!--<p>
                     Please contact us with an e-mail to
                     <a href="mailto:elearning@hs-wismar.de">elearning@hs-wismar.de</a>.
-                </p>
+                </p>-->
             </div>
 
             <h1>
                 Record podcasts and videos yourself
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Set up course for this'), $controller->url_for('mail')) ?>
                 <p>Would you like to make audio and video recordings on your computer and provide them to the participants? There are various tools for this:</p>
                 <ul>
                     <li>
@@ -163,6 +174,9 @@ Phone number for questions:
                         <a href="<?= $controller->link_for('assistant/recording_info/tips') ?>" data-dialog="size=640x500">Tips and tricks</a>
                     </li>
                 </ul>
+<div style="float:left;">
+<?= Studip\LinkButton::create(_('Set up course for this'), $controller->url_for('mail')) ?>
+</div>
             </div>
           </div>
         </section>
@@ -187,7 +201,7 @@ Phone number for questions:
                         <a href="<?= $controller->link_for('assistant/oer_info/howto') ?>" data-dialog="size=640x550">Explanatory video (Youtube)</a>
                     </li>
                     <li>
-                        <a href="https://www.hs-wismar.de/en/university/einrichtungen/e-learning-centre/media-law-in-teaching/free-materials/" class="link-extern" target="_blank">More information on the webpages of the e-learning-centre </a>
+                        <a href="https://www.hs-wismar.de/en/university/einrichtungen/e-learning-centre/media-law-in-teaching/free-materials/" class="link-extern" target="_blank">More information on the webpages of the E-learning Centre </a>
                     </li>
                 </ul>
             </div>
@@ -196,7 +210,7 @@ Phone number for questions:
                 Compiling materials (Stud.IP: Courseware)
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create('Set up course for this', $controller->url_for('assistant/courseware')) ?>
+
                 <p>With the Stud.IP "Courseware" module you can merge various sources and create interactive learning modules.</p>
                 <ul>
                     <li>
@@ -209,6 +223,9 @@ Phone number for questions:
                         <a href="<?= $controller->link_for('assistant/courseware_info/explain') ?>" data-dialog="size=640x520">Explanatory video: Courseware and Vips</a>
                     </li>
                 </ul>
+                <div style="float:left;">
+                  <?= Studip\LinkButton::create('Set up course for this', $controller->url_for('assistant/courseware')) ?>
+                </div>
             </div>
 
             <h1>
@@ -242,7 +259,6 @@ Phone number for questions:
                 Online meetings and video conferences
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Set up course for this'), $controller->url_for('assistant/meetings')) ?>
                 <p>With video conferencing you can conduct online team meetings and seminar sessions or offer online consultation hours for students.</p>
                 <ul>
                     <li>
@@ -255,6 +271,9 @@ Phone number for questions:
                         <a href="<?= $controller->link_for('assistant/meeting_info/tips') ?>" data-dialog="size=640x500">Tips and tricks</a>
                     </li>
                 </ul>
+                <div style="float: left;">
+                    <?= Studip\LinkButton::create(_('Set up course for this'), $controller->url_for('assistant/meetings')) ?>
+                  </div>
             </div>
 <!--
             <h1>
@@ -281,7 +300,6 @@ Phone number for questions:
                 Working together on texts
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create('Set up pad', $controller->url_for('pad')) ?>
                 <p>The joint work on texts is important in many forms of courses: collecting ideas, writing protocols,
                     collecting work results. Stud.IP offers two well integrated tools for this: Pads and Wikis.
                 <ul>
@@ -295,6 +313,9 @@ Phone number for questions:
                         <a href="<?= $controller->link_for('assistant/collab_info/tips') ?>" data-dialog="size=640x500">Tips and tricks</a>
                     </li>
                 </ul>
+                <div style="float:left;">
+                  <?= Studip\LinkButton::create('Set up pad', $controller->url_for('pad')) ?>
+                </div>
             </div>
         </div>
     </section>
@@ -303,7 +324,7 @@ Phone number for questions:
 
     <section class="assistant-section" style="clear: both;">
         <h1>
-            Get Feedback
+            Get feedback
         </h1>
 
         <div class="accordion">
@@ -329,10 +350,14 @@ Phone number for questions:
 
       <h1>Two practical Tools</h1>
         <div class="accordion_content">
+    <p>Discuss asynchronously problems and questions in the <b>forum</b>. This is useful in combination with asynchronous teaching methods.
+<div style="float:left;">
     <?= Studip\LinkButton::create(_('Create a Forum'), $controller->url_for('assistant/forum')) ?>
-    <p>Discuss asynchronously problems and questions in the forum. This is useful in combination with asynchronous teaching methods.
-      <?= Studip\LinkButton::create(_('Start Blubbering'), $controller->url_for('assistant/blubber')) ?>
-            <p>Discuss synchronously problems and questions in the blubber. Make an appointment with your students for a consultation hour with Blubber.
+  </div><br><br><br>
+            <p>Discuss synchronously problems and questions in the <b>blubber</b>. Make an appointment with your students for a consultation hour with Blubber.
+              <div style="float:left;">
+                    <?= Studip\LinkButton::create(_('Start Blubbering'), $controller->url_for('assistant/blubber')) ?>
+                  </div>
         </div>
     </div>
     </section>
@@ -349,21 +374,22 @@ Phone number for questions:
                 Simple turning-in procedures: Homework folder
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Set up homework folder'), $controller->url_for('assistant/homework')) ?>
+
                 <p>The Stud.IP files tools allows collect  files as homework submissions from course participants. Teachers and tutors see all files, students only their own.
                 <ul>
                     <li>
                         <a href="<?= $controller->link_for('assistant/homework_info/howto') ?>" data-dialog="size=640x500">This is how it works</a>
                     </li>
-
                 </ul>
+                <div style="float:left;">
+                    <?= Studip\LinkButton::create(_('Set up homework folder'), $controller->url_for('assistant/homework')) ?>
+                  </div>
             </div>
 
             <h1>
                 Exercise sheets and tasks with deadlines
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Set up course for Vips'), $controller->url_for('assistant/vips')) ?>
                 <p>The Stud.IP "Vips" module provides comprehensive options for exercise sheets, tasks with deadlines and
                     self-checking tasks that can be evaluated automatically or manually.</p>
                 <ul>
@@ -377,6 +403,9 @@ Phone number for questions:
                         <a href="<?= $controller->link_for('assistant/vips_info/tips') ?>" data-dialog="size=640x400">Tips and tricks</a>
                     </li>
                 </ul>
+                <div style="float:left;">
+                <?= Studip\LinkButton::create(_('Set up course for Vips'), $controller->url_for('assistant/vips')) ?>
+              </div>
             </div>
         </div>
     </section>

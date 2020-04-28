@@ -24,7 +24,7 @@
                     </li>
                 </ul>
                 <br>
-                  <div id="Button" style="float:left;">
+                  <div style="float:left;">
                     <?= Studip\LinkButton::create(_('Rundmail schreiben'),
                         URLHelper::getURL('dispatch.php/messages/write', [
                             'course_id'       => $course_id,
@@ -52,7 +52,7 @@
                         <a href="<?= $controller->link_for('assistant/files_info/tips') ?>" data-dialog="size=640x400;title='Online-Lehre: Material onloine bereitstellen'">Tipps und Tricks</a>
                     </li>
                 </ul>
-                <div id="Button" style="float:left;">
+                <div style="float:left;">
               <?= Studip\LinkButton::create(_('Datei hochladen'), '#', ['onclick' => "STUDIP.Files.openAddFilesWindow('$folder_id')", 'data-action' => 'files/upload']) ?>
             </div>
             </div>
@@ -72,7 +72,7 @@
                         <a href="<?= $controller->link_for('assistant/corona_info/tips') ?>" data-dialog="size=640x400">Tipps und Tricks</a>
                     </li>
                 </ul>
-                <div id="Button" style="float:left;">
+                <div style="float:left;">
                 <?= Studip\LinkButton::create(_('Corona-Infoseite einrichten'), $controller->url_for('assistant/corona')) ?>
                 </div>
             </div>
@@ -84,7 +84,7 @@
 
                 <p>Wir haben einige didaktische Hinweise und Anregungen zusammengetragen, damit Sie Ihre Lehre möglichst gut an die aktuellen Gegebenheiten anpassen
                     und den erhöhten Anforderungen an Selbstlernkompetenzen der Studierenden Rechnung tragen können. </p>
-                <div id="Button" style="float:left;">
+                <div style="float:left;">
                 <?= Studip\LinkButton::create(_('Hinweise zur Didaktik'), 'https://www.hs-wismar.de/hochschule/einrichtungen/e-learning-zentrum/lehre-weiterentwickeln/', ['target' => '_blank', 'data-action' => 'tips/gute_lehre']) ?>
                 <!--<ul>
                     <li>
@@ -139,9 +139,6 @@ Telefonnummer für Rückfragen:
                 Aufzeichnung im Studio
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Weitere Informationen'),
-                    'https://www.hs-wismar.de/hochschule/einrichtungen/e-learning-zentrum/produktionsstudio-pela/',
-                    ["target"=>"_blank", 'data-action' => 'tips/covid']) ?>
                 <p>
                     Die Hochschule Wismar betreibt das <b>PELA</b> Videostudio im ITSMZ Raum 104.
                     Hier können mit Unterstützung und Einweisung durch MitarbeiterInnen des E-Learning-Zentrums Videos in überdurchschnittlicher
@@ -150,18 +147,22 @@ Telefonnummer für Rückfragen:
                 <ul>
                     <li><a href="<?= $controller->link_for('assistant/studio_info/selfrecording') ?>" data-dialog="size=640x500">Produktionsbeispiele aus dem <b>PELA</b></a></li>
                 </ul>
-
-                <p>
+                <div style="float:left;">
+                <?= Studip\LinkButton::create(_('Buchung und Informationen'),
+                    'https://www.hs-wismar.de/hochschule/einrichtungen/e-learning-zentrum/produktionsstudio-pela/',
+                    ["target"=>"_blank", 'data-action' => 'tips/covid']) ?>
+                  </div>
+              <!--  <p>
                     Bitte kontaktieren Sie uns mit einer E-Mail an
                     <a href="mailto:elearning@hs-wismar.de">elearning@hs-wismar.de</a>.
-                </p>
+                </p> -->
             </div>
 
             <h1>
                 Podcasts und Videos selbst aufzeichnen
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('opencast_plugin')) ?>
+
                 <p>Sie möchten Audio- und Video-Aufnahmen am eigenen Rechner erstellen und den Teilnehmenden
                 zur Verfügung stellen? Dafür gibt es verschiedene Werkzeuge:</p>
                 <ul>
@@ -175,6 +176,9 @@ Telefonnummer für Rückfragen:
                         <a href="<?= $controller->link_for('assistant/recording_info/tips') ?>" data-dialog="size=640x500">Tipps und Tricks</a>
                     </li>
                 </ul>
+                  <div style="float:left;">
+                  <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('opencast_plugin')) ?>
+                </div>
             </div>
         </div>
     </section>
@@ -208,7 +212,6 @@ Telefonnummer für Rückfragen:
                 Materialien zusammenstellen (Stud.IP: Courseware)
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('assistant/courseware')) ?>
                 <p>Mit dem Stud.IP-Plugin "Courseware" können Sie vielfältige Quellen zusammenführen und ganz einfach interaktive Lernmodule erstellen.</p>
                 <ul>
                     <li>
@@ -221,6 +224,9 @@ Telefonnummer für Rückfragen:
                         <a href="<?= $controller->link_for('assistant/courseware_info/explain') ?>" data-dialog="size=640x520">Erklärvideo: Courseware und Vips</a>
                     </li>
                 </ul>
+                <div style="float:left;">
+                  <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('assistant/courseware')) ?>
+                </div>
             </div>
 
             <h1>
@@ -253,7 +259,6 @@ Telefonnummer für Rückfragen:
                 Online-Sitzungen und Videokonferenzen
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('assistant/meetings')) ?>
                 <p>Mit Videokonferenzen führen Sie online Team-Besprechungen und Seminar-Sitzungen durch und bieten Online-Sprechstunden für Studierende an.</p>
                 <ul>
                     <li>
@@ -266,6 +271,9 @@ Telefonnummer für Rückfragen:
                         <a href="<?= $controller->link_for('assistant/meeting_info/tips') ?>" data-dialog="size=640x500">Tipps und Tricks</a>
                     </li>
                 </ul>
+                <div style="float:left;">
+                  <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('assistant/meetings')) ?>
+                </div>
             </div>
 
             <!--<h1>
@@ -292,7 +300,6 @@ Telefonnummer für Rückfragen:
                 Gemeinsam an Texten arbeiten
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Pad einrichten'), $controller->url_for('pad')) ?>
                 <p>Die gemeinsame Arbeit an Texten ist in vielen Veranstaltungsformen wichtig: Ideen sammeln, Protokolle schreiben,
                     Arbeitsergebnisse zusammentragen. Stud.IP bietet dafür zwei gut integrierte Tools: Pads und Wikis.</p>
                 <ul>
@@ -306,6 +313,9 @@ Telefonnummer für Rückfragen:
                         <a href="<?= $controller->link_for('assistant/collab_info/tips') ?>" data-dialog="size=640x500">Tipps und Tricks</a>
                     </li>
                 </ul>
+                <div style="float:left;">
+                <?= Studip\LinkButton::create(_('Pad einrichten'), $controller->url_for('pad')) ?>
+              </div>
             </div>
         </div>
     </section>
@@ -340,12 +350,18 @@ Telefonnummer für Rückfragen:
             </ul>
         </div>
 
-  <h1>Zwei praktische Tools</h1>
+  <h1>
+    Zwei praktische Tools
+  </h1>
     <div class="accordion_content">
+<p>Das <b>Forum</b> ist ideal für zeitversetzte (asynchrone) Lehrformate. Zudem eignet es sich, um Fragen und Diskussionen im Team zu strukturieren und zu moderieren.
+<div style="float:left;">
 <?= Studip\LinkButton::create(_('Forum anlegen'), $controller->url_for('assistant/forum')) ?>
-<p>Das Forum ist ideal für zeitversetzte (asynchrone) Lehrformate. Zudem eignet es sich, um Fragen und Diskussionen im Team zu strukturieren und zu moderieren.
-  <?= Studip\LinkButton::create(_('Losblubbern'), $controller->url_for('assistant/blubber')) ?>
-        <p>Blubber eignet sich für die synchrone wie auch asynchrone Kommunikation. Dieses Tool ist daher ideal für Chat-Sprechstunden und Diskussionen.
+</div><br><br><br>
+        <p><b>Blubber</b> eignet sich für die synchrone wie auch asynchrone Kommunikation. Dieses Tool ist daher ideal für Chat-Sprechstunden und Diskussionen.
+          <div style="float:left;">
+          <?= Studip\LinkButton::create(_('Losblubbern'), $controller->url_for('assistant/blubber')) ?>
+        </div>
     </div>
 </div>
 </section>
@@ -362,7 +378,6 @@ Telefonnummer für Rückfragen:
                 Einfache Abgaben: Hausaufgabenorder
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Hausaufgabenorder einrichten'), $controller->url_for('assistant/homework')) ?>
                 <p>Über die Dateiablage von Stud.IP können Sie Hausaufgaben / Dateien von Kurs-Teilnehmenden
                     einsammeln. Lehrende und Tutor*innen sehen alle Dateien, die Studierenden nur die eigenen.</p>
                 <ul>
@@ -370,13 +385,15 @@ Telefonnummer für Rückfragen:
                         <a href="<?= $controller->link_for('assistant/homework_info/howto') ?>" data-dialog="size=640x500">So geht's</a>
                     </li>
                 </ul>
+                <div style="float:left;">
+                    <?= Studip\LinkButton::create(_('Hausaufgabenorder einrichten'), $controller->url_for('assistant/homework')) ?>
+                  </div>
             </div>
 
             <h1>
                 Übungsblätter und Aufgaben mit Abgabefrist
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('assistant/vips')) ?>
                 <p>Stud.IP bietet mit "Vips" umfangreiche Möglichkeiten für Übungsblätter, Aufgaben mit Abgabefrist und
                     Selbstüberprüfungsaufgaben, die automatisiert oder manuell bewertet werden können.</p>
                 <ul>
@@ -390,6 +407,9 @@ Telefonnummer für Rückfragen:
                         <a href="<?= $controller->link_for('assistant/vips_info/tips') ?>" data-dialog="size=640x400">Tipps und Tricks</a>
                     </li>
                 </ul>
+                <div style="float:left;">
+                    <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('assistant/vips')) ?>
+                  </div>
             </div>
         </div>
     </section>
@@ -404,12 +424,11 @@ Telefonnummer für Rückfragen:
                 Wir haben hier nur die grundlegendsten Szenarien vorgestellt. Mit Stud.IP und anderen Diensten können Sie
                     Ihre Lehre auf viele weitere Arten unterstützen. Sprechen Sie uns einfach an:
                 <br><br>
-                <a href="mailto:elearning@hs-wismar.de">elearning@hs-wismar.de</a><br>
                 Tel. 03841/753-7805 oder 03841/753-7710<br>
                 <a href="https://intern.hs-wismar.de/hochschule/stabsstellen-des-rektorats/e-learning-zentrum/kommunikation-in-corona-zeiten/" class="link-extern" target="_blank"
                     >COVID-19: Hinweise zum Einsatz Digitaler Lehre
                 </a><br>
-                <a href="https://www.hs-wismar.de/hochschule/einrichtungen/itsmz/it-info/arbeiten-von-unterwegs/" class="link-extern" target="_blank">Homeoffice-Dienste des ITSMZ</a>
+                <a href="https://www.hs-wismar.de/hochschule/einrichtungen/itsmz/it-info/arbeiten-von-unterwegs/" class="link-extern" target="_blank">Dienste des ITSMZ für mobile Arbeit</a>
             </p>
 
             <?= Studip\LinkButton::create(_('Anfrage stellen'),

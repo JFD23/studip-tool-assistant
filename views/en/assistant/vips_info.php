@@ -27,7 +27,7 @@
     </ol>
 
 <? elseif ($view === 'howto'): ?>
-    <h2>Exercise sheets and tasks with deadline: Here's how</h2>
+    <h2>Exercise sheets and tasks with deadline:</h2>
     <div style="float:right;margin-left:10px;">
         <p>
             <img src="<?= $plugin->getPluginURL() ?>/assets/en/studip-menu-vips.jpg" width="240">

@@ -37,17 +37,16 @@ class AssistantController extends ToolAssistantBaseController
         $widget->setTitle($name);
         if ($preferredLang=='en') {
             $widget->addElement(new WidgetElement('Hochschule Wismar offers many opportunities to design teaching online via E-Learning-Centre and the ITSMC.
-                Reliable operation and personal support are guaranteed for the tools presented here and they allow for a use that is unobjectionable in terms of data protection law.<br><br>
-                On this page, you will find initial information and you can start further steps directly from here.'));
-            $widget->addElement(new WidgetElement(Studip\LinkButton::create(_('Download cheat sheet'), $this->plugin->getPluginURL().'/assets/cheatsheet-teach-online.pdf')));
+                Reliable operation and personal support are guaranteed for the tools presented here and they allow a use that is unobjectionable in terms of data protection law.<br><br>
+                On this page, you will find initial information and you can start further steps directly from here.<br>'));
+            $widget->addElement(new WidgetElement(Studip\LinkButton::create(_('Download cheat sheet'), $this->plugin->getPluginURL().'/assets/cheatsheet-teach-online.pdf', ['target' => '_blank'])));
         } else {
             $widget->addElement(new WidgetElement(
                 'Die Hochschule Wismar bietet mit dem ELZ und ITSMZ viele Möglichkeiten, Lehre online zu gestalten.
                  Für die hier vorgestellten Tools sind verlässlicher Betrieb und persönlicher Support gewährleistet und sie
                  ermöglichen eine datenschutzrechtlich unbedenkliche Nutzung.<br><br>
-                 Hier finden Sie erste Informationen und können weitere Schritte direkt von hier aus starten.')
-            );
-            $widget->addElement(new WidgetElement(Studip\LinkButton::create(_('"Spickzettel" herunterladen'), $this->plugin->getPluginURL().'/assets/spickzettel-online-lehre.pdf')));
+                 Hier finden Sie erste Informationen und können weitere Schritte direkt von hier aus starten.<br>'));
+            $widget->addElement(new WidgetElement(Studip\LinkButton::create(_('"Spickzettel" herunterladen'), $this->plugin->getPluginURL().'/assets/spickzettel-online-lehre.pdf', ['target' => '_blank'])));
         }
         Sidebar::get()->addWidget($widget);
 

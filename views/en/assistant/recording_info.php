@@ -48,7 +48,7 @@
             which ideally should not be longer than 30 minutes.<br>&nbsp;</li>
         <li><b> You don't always have to be in the picture.</b> Often it is easier to record just an audio commentary.
             Especially if your students already know you, this is no problem.
-        </li>
+        <br>&nbsp;</li>
         <li><b>The most important thing: good sound.</b> Unfortunately also the most difficult. Best to use a headset
             from a well-known manufacturer (from about 20-30 euros).</li>
     </ul>
