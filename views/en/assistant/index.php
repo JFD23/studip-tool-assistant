@@ -452,7 +452,7 @@ Phone number for questions:
     <section class="assistant-section">
         <h1>
             <?= Icon::create('forum', Icon::ROLE_INFO)->asImg(20, ['style' => 'vertical-align: text-bottom']) ?>
-            Meetup with Colleagues
+            Meetup with colleagues
         </h1>
         <div class="assistant-infobox">
             <p style="text-aling:justify;">
