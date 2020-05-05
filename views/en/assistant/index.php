@@ -456,7 +456,7 @@ Phone number for questions:
         </h1>
         <div class="assistant-infobox">
             <p style="text-aling:justify;">
-              If you like to discuss the possibilities of online teaching with your colleagues please join our course <i>Lehrendenschaft</i>.
+              If you like to discuss the possibilities of online teaching with your colleagues please join our course <i>Forum "Online-Lehre"</i>.
                 <br><br>
               Within this course you can also find useful tutorials at the tab <i>Courseware</i>.
                 <br>

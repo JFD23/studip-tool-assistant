@@ -460,7 +460,7 @@ Telefonnummer für Rückfragen:
         </h1>
         <div class="assistant-infobox">
             <p style="text-aling:justify;">
-              Wenn Sie gern mit anderen KollegInnen in Austausch zur Online-Lehre treten möchten, so empfehlen wir Ihnen den Beitritt zur Stud.IP Veranstaltung "Lehrendenschaft".
+              Wenn Sie gern mit anderen KollegInnen in Austausch zur Online-Lehre treten möchten, so empfehlen wir Ihnen den Beitritt zur Stud.IP Veranstaltung <i>Forum "Online-Lehre"</i>.
                 <br><br>
               In dieser Veranstaltung finden Sie auch weitere Tutorials des E-Learning-Zentrums unter dem Reiter Courseware.
                 <br>
