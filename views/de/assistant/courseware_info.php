@@ -4,7 +4,7 @@
     <iframe title="YouTube video player" class="youtube-player" type="text/html" width="320" height="193" src="https://www.youtube.com/embed/boHfHrAv0OI" frameborder="2" allowFullScreen></iframe>
 </div>
 <p>
-    Bei der Informatik-Vorlesung "Web-Technologien" von Tobias Thelen gibt es keine Präsenz-Vorlesung mehr, alle Inhalte werden über Stud.IP als "Courseware"-Modul ausgeliefert.
+    Bei der Informatik-Vorlesung "Web-Technologien" von Tobias Thelen (Uni Osnabrück) gibt es keine Präsenz-Vorlesung mehr, alle Inhalte werden über Stud.IP als "Courseware"-Modul ausgeliefert.
 </p>
 <p>
     Hier können Videos, Bilder, Texte, Aufgaben und Diskussionsmöglichkeiten in einer Kapitelstruktur präsentiert und bearbeitet werden.
@@ -36,7 +36,9 @@
     Die Aktivierung ist aber auch über "Mehr..." -> "Courseware" möglich. Rufen Sie danach den neuen Reiter auf und aktivieren Sie den Bearbeitungsmodus.
 </p>
 <p>
-    Weitere Informationen bekommen Sie in der Online-Hilfe (Fragezeichen oben rechts oder direkt unter <a href="https://hilfe.studip.de/help/4.2/de/MoocIP.Courseware" class="link-extern" target="_blank">https://hilfe.studip.de/help/4.2/de/MoocIP.Courseware</a>).
+    Weitere Informationen bekommen Sie in der Online-Hilfe (Fragezeichen oben rechts oder direkt unter <a href="https://hilfe.studip.de/help/4.2/de/MoocIP.Courseware" class="link-extern" target="_blank">https://hilfe.studip.de/help/4.2/de/MoocIP.Courseware</a>)
+<br>
+oder in unserer Stud.IP Veranstaltung <a href="https://studip.hs-wismar.de/dispatch.php/course/details?sem_id=50a39d9edb3348835b846683f3a76faf&again=yes&sso=shib" class="link-extern" target="_blank">Lehrendenschaft</a>.
 </p>
 <? elseif ($view === 'explain'): ?>
     <h2>Materialien zusammenstellen: Erklärvideo Courseware & Vips</h2>

@@ -2,15 +2,15 @@
 <h2>Selbst aufzeichnen: Opencast Studio</h2>
     <div style="float:right;margin-left:10px;">
         <p>
-            <iframe width="240" height="135" src="https://www.youtube.com/embed/oKwv0HnCCIQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="240" height="135" src="https://media.hs-wismar.de/static/mh_default_org/engage-player/9fd90172-5976-401f-aad9-9e374000554d/561b1702-fc4c-4570-a575-d9144b84071a/concat.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </p>
 
     </div>
     <p>
-        Rechtzeitig vor dem kommenden Semester wird über Stud.IP auch die neue Software "Opencast Studio" verfügbar sein. Es handelt sich dabei um ein webbasiertes Portal, mit dem man ohne Installation von zusätzlicher Software auf dem eigenen PC seinen Bildschirm und auf Wunsch auch ein Kamerabild aufzeichnen kann. Der verwendete Rechner sollte üblichen Leistungsanforderungen entsprechen und eine aktuelle Version von Firefox oder Google Chrome installiert haben. Nach der Aufzeichnung in Opencast Studio können Sie das erstellte Video auf ihren eigenen Rechner laden und die Aufzeichnung dann über die vorhandenen Opencast Server den Studierenden in ihrem Stud.IP Kurs zur Verfügung stellen.
+        Rechtzeitig in diesem speziellen Semester ist über Stud.IP auch die neue Software "Opencast Studio" verfügbar. Es handelt sich dabei um ein webbasiertes Portal, mit dem man ohne Installation von zusätzlicher Software auf dem eigenen PC seinen Bildschirm und auf Wunsch auch ein Kamerabild aufzeichnen kann. Der verwendete Rechner sollte üblichen Leistungsanforderungen entsprechen und eine aktuelle Version von Firefox oder Google Chrome installiert haben. Nach der Aufzeichnung in Opencast Studio können Sie das erstellte Video direkt den Studierenden in ihrem Stud.IP Kurs zur Verfügung stellen, indem Sie es zu Opencast hochladen.
     </p>
     <p>
-        Auch bei dieser Technologie hat die Universität ausreichende Kapazitäten, um die o.g. Aufzeichnungen zu ermöglichen. Der Aufwand für Lehrende ist etwas höher, da man selbst die Aufzeichnungstechnologie bedienen muss, um die Videos zu erstellen. Dafür können die Aufzeichnungen an einem beliebigen Ort, der über eine ausreichend schnelle Netzwerkverbindung verfügt, durchgeführt werden. Wir empfehlen, mit Opencast Studio eher kleinere Videos zu einzelnen Themen zu erstellen, längere Vorträge in Vorlesungslänge dagegen vorzugsweise in den dafür vorbereiteten Hörsälen oder in den vorhandenen Videostudios aufzuzeichnen.
+        Auch bei dieser Technologie hat die Hochschule ausreichende Kapazitäten, um die o.g. Aufzeichnungen zu ermöglichen. Der Aufwand für Lehrende ist etwas höher, da man selbst die Aufzeichnungstechnologie bedienen muss, um die Videos zu erstellen. Dafür können die Aufzeichnungen an einem beliebigen Ort, der über eine ausreichend schnelle Netzwerkverbindung verfügt, durchgeführt werden. Wir empfehlen, mit Opencast Studio eher kleinere Videos zu einzelnen Themen zu erstellen, längere Vorträge in Vorlesungslänge dagegen vorzugsweise im <b>PELA</b> aufzuzeichnen.
     </p>
 
 <? elseif ($view === 'powerpoint'): ?>

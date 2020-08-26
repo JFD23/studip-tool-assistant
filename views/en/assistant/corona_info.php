@@ -6,7 +6,7 @@
         This allows you to place information that is important for the course in terms of organisation or content in a clearly visible and prominent position.
     </p>
     <p>
-        For your students, the question for each course in the upcoming semester is: "How does the semester begin in this course? What do I have to do, where can I find information?"
+        For your students, the question for each course in the upcoming semester is: "How is this course scructured? What do I have to do, where can I find information?"
         With a uniformly placed "Corona info page" structured according to a comparable pattern, you will make it easier for your participants to find their way around.
     </p>
     <p>

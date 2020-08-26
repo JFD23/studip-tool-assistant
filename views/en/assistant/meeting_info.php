@@ -2,7 +2,7 @@
 <h2>Online meetings and video conferencing: Example</h2>
     <p>
         <img src="<?= $plugin->getPluginURL() ?>/assets/bbb-raum.jpg">
-        <br><span style="font-size:66%">Videoconference with a "BigBlueButton" server of Hochschule Wismar</span>
+        <br><span style="font-size:66%">Videoconference with the "BigBlueButton" server of Hochschule Wismar</span>
     </span>
     </p>
     <p>
@@ -32,7 +32,7 @@
     </ol>
 <p>&nbsp;</p>
     <p>Further information on the use of BigBlueButton can be found at <br>
-            <a href="https://www.rz.uni-osnabrueck.de/homeoffice/bigbluebutton.html">https://www.rz.uni-osnabrueck.de/homeoffice/bigbluebutton.html</a></p>
+            <a href="https://www.youtube.com/user/bigbluebuttonshare">BigBlueButton Tutorials on YouTube</a></p>
     <p>
         Notes:
         <ul>
@@ -47,7 +47,5 @@
         <li>Via the video conference you can make your screen visible to all participants, e.g. for presentations, shared documents etc.<br>&nbsp;</li>
     </ul>
     <p>Further information on the use of BigBlueButton can be found at <br>
-            <a href="https://www.rz.uni-osnabrueck.de/homeoffice/bigbluebutton.html">https://www.rz.uni-osnabrueck.de/homeoffice/bigbluebutton.html</a></p>
+            <a href="https://www.youtube.com/user/bigbluebuttonshare">BigBlueButton Tutorials on YouTube</a></p>
 <? endif ?>
-
-
