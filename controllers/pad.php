@@ -20,22 +20,20 @@ class PadController extends ToolAssistantBaseController
     public function index_action()
     {
         $manager = \PluginManager::getInstance();
-        $padPlugin = $manager->getPlugin('StudIPadPlugin');
+        $padPlugin = $manager->getPlugin('EtherpadPlugin');
 
         if (!$manager->isPluginActivated($padPlugin->getPluginId(), $this->course_id)) {
             $manager->setPluginActivated($padPlugin->getPluginId(), $this->course_id, true);
         }
 
-        $this->redirect(URLHelper::getURL('plugins.php/studipadplugin/show', array('cid' => $this->course_id)));
-
-      /*  $padName = substr(preg_replace('/[^\w]/', '', \Context::get()->name), 0, 32);
+        $padName = substr(preg_replace('/[^\w]/', '', \Context::get()->name), 0, 32);
 
         if (!strlen($padName)) {
             throw new \RuntimeException(_("Es kann kein Pad-Name aus dem Veranstaltungsnamen generiert werden."));
         }
 
-        $url = \PluginEngine::getURL($padPlugin, ['new_pad_name' => $padName, 'if_not_exists' => 1], 'createPad');
+        $url = \PluginEngine::getURL($padPlugin, ['new_pad_name' => $padName, 'if_not_exists' => 1], 'pads/create');
 
-        $this->redirect($url);*/
+        $this->redirect($url);
     }
 }

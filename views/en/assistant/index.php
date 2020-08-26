@@ -98,6 +98,72 @@
         </div>
     </section>
 
+    <section class="assistant-section">
+        <h1>
+            Hybrid-Lehre: Einstieg (English Version coming soon)
+        </h1>
+
+        <div class="accordion">
+
+            <h1>
+                Herausforderungen der Hybriden Lehre
+            </h1>
+            <div class="accordion_content">
+                <p>In der Hybriden Lehre werden Elemente der Online Lehre mit Elementen der Präsenzlehre kombiniert.
+                    Je nach Szenarion geschieht dieses ggf. sogar zeitgleich.
+                    Neben technischen Besonderheiten gibt es einige inhaltliche Faktoren zu beachten.
+                    Wir haben Ihnen ein paar Tipps und Hinweise zusammengestellt, um Ihnen den Einstieg zu erleichtern:</p>
+                <ul>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/hybrid_info/different_groups') ?>" data-dialog="size=640x400;title='Unterschiedliche Zuhörendengruppen'">Unterschiedliche Zuhörendengruppen einbeziehen</a>
+                    </li>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/hybrid_info/attention') ?>" data-dialog="size=640x600;title='Aufnahmefähigkeit'">Reduzierte Aufnahmefähigkeit im digitalen Kanal beachten</a>
+                    </li>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/hybrid_info/burden') ?>" data-dialog="size=640x600;title='Teilnehmende gleichmäßig belasten'">Präsenz- und Online-Teilnehmende gleichmäßig belasten</a>
+                    </li>
+                </ul>
+                <p>Eine umfangreiche Darstellung der Szenarien, sowie detaillierte erklärende Videos und weiterführende Hinweise finden Sie auf unserer Homepage <a href="https://www.virtuos.uni-osnabrueck.de/digitale_lehre/hybrid_semester_informationen_fuer_lehrende.html" target="_blank">
+                        Hybrid-Semester: Informationen für Lehrende</a>
+                </p>
+            </div>
+
+
+            <h1>
+                Umsetzungsvarianten
+            </h1>
+            <div class="accordion_content">
+                <p>Um die Tatsache, dass nicht alle Teilnehmenden gleichzeitig vor Ort anwesend sein können,
+                    zu kompensieren, bieten sich verschiedene Varianten an.</p>
+                <p>Eine umfangreiche Darstellung der Szenarien, sowie detaillierte erklärende Videos und weiterführende Hinweise finden Sie auf unserer Homepage <a href="https://www.virtuos.uni-osnabrueck.de/digitale_lehre/hybrid_semester_informationen_fuer_lehrende.html" target="_blank">
+                        Hybrid-Semester: Informationen für Lehrende</a>
+                </p>
+            </div>
+
+            <h1>
+                Vorbereitung
+            </h1>
+            <div class="accordion_content">
+                <p>Hier finden Sie in kurzen Stichworten einige Punkte, an die Sie denken sollten. In einem einstündigen Vortrag stellen wir neben
+                    den verschiedenen Durchführungsvarianten auch die technischen und organisatorischen Besonderheiten dar:
+                    <a href="https://video4.virtuos.uni-osnabrueck.de/paella/ui/watch.html?cid=cf1b359a6eef479105a7f9e79a1f6ba7&id=627448d6-980a-4940-b939-ae14104bde81" target="_blank">Video ansehen</a>
+                </p>
+
+                <ul>
+                    <li>Szenario wählen und ggf. Technik beschaffen</li>
+                    <li>Technik vorab testen</li>
+                    <li>Internet im Hörsaal: MAC-Adresse vom IT Beauftragten eintragen lassen</li>
+                    <li>Vergabe von Sitzplätzen an Studierende planen</li>
+                    <li>Studierende informieren</li>
+                </ul>
+                <p>In den kommenden Wochen bietet das virtUOS regelmäßig Sprechstunden zum hybriden Semester an. Termine finden Sie in Stud.IP und auf unserer <a href="https://www.virtuos.uni-osnabrueck.de/zentrum_fuer_digitale_lehre_campus_management_und_hochschuldidaktik.html" target="_blank">Webseite</a>.</p>
+                <p>Für organisatorische Details zum Hygienekonzept und zur Raumnutzung wenden Sie sich ggf. an Ihren Fachbereich.</p>
+            </div>
+
+        </div>
+    </section>
+
    <section class="assistant-section">
       <h1>
             Online lectures (e.g. for lectures)
