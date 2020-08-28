@@ -37,6 +37,8 @@
 </p>
 <p>
     Further information is available in the online help system (question mark at the top right or directly under <a href="https://hilfe.studip.de/help/4.2/en/MoocIP.Courseware">https://hilfe.studip.de/help/4.2/en/MoocIP.Courseware</a>)
+    <br>
+    or in our Stud.IP course <a href="https://studip.hs-wismar.de/dispatch.php/course/details?sem_id=50a39d9edb3348835b846683f3a76faf&again=yes&sso=shib" class="link-extern" target="_blank">Lehrendenschaft</a>.
 </p>
 <? elseif ($view === 'explain'): ?>
     <h2>Compile materials: Explanation video Courseware & Vips (German only)</h2>

@@ -6,7 +6,7 @@
         Damit können Sie Informationen, die für den Kurs organisatorisch oder inhaltlich wichtig sind, gut sichtbar und prominent platzieren.
     </p>
     <p>
-        Für die Studierenden stellt sich im kommenden Semester für jeden Kurs die Frage: "Wie beginnt das Semester in diesem Kurs? Was muss ich tun, wo finde ich Informationen?" Mit einer einheitlich platzierten und nach vergleichbarem Muster strukturierten "Corona-Infoseite" erleichtern Sie Ihren Teilnehmenden die Orientierung.
+        Für die Studierenden stellt sich im kommenden Semester für jeden Kurs die Frage: "Wie läuft dieses Semester in diesem Kurs ab? Was muss ich tun, wo finde ich Informationen?" Mit einer einheitlich platzierten und nach vergleichbarem Muster strukturierten "Corona-Infoseite" erleichtern Sie Ihren Teilnehmenden die Orientierung.
     </p>
     <p>
         Aktivieren Sie das Modul "Informationen" auf der "Mehr..."-Seite Ihres Kurses oder direkt mit dem Aktions-Knopf "Corona-Infoseite" einrichten.

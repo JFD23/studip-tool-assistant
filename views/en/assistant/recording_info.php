@@ -12,7 +12,7 @@
         After the recording in Opencast Studio it will be uploaded to the Hochschule Wismar Opencast servers and are made available to students in their Stud.IP course automatically.
     </p>
     <p>
-        The university has sufficient capacity to enable the above-mentioned recordings with this technology as well.
+        Hochschule Wismar has sufficient capacity to enable the above-mentioned recordings with this technology as well.
         The effort for lecturers is a bit higher, because they have to operate the recording technology themselves to create the videos.
         On the other hand, the recordings can be made at any location that has a sufficiently fast network connection.
         We recommend using Opencast Studio to create smaller videos on individual topics,
@@ -48,7 +48,7 @@
             which ideally should not be longer than 30 minutes.<br>&nbsp;</li>
         <li><b> You don't always have to be in the picture.</b> Often it is easier to record just an audio commentary.
             Especially if your students already know you, this is no problem.
-        </li>
+        <br>&nbsp;</li>
         <li><b>The most important thing: good sound.</b> Unfortunately also the most difficult. Best to use a headset
             from a well-known manufacturer (from about 20-30 euros).</li>
     </ul>

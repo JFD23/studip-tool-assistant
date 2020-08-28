@@ -52,8 +52,9 @@
 <? elseif ($view === 'howto'): ?>
     <h2>OER-Portal zum Tauschen freier Materialien: Erklärfilm</h2>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/dpjrmx513wk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p font-size="50%">Was sind OER? by OERinForm, <a href="oer.amh-ev.de">oer.amh-ev.de</a><br>
-        <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons -
-            Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a></p>
+    <iframe width="560" height="315" src="https://media.hs-wismar.de/static/mh_default_org/engage-player/aadb50a8-d703-43fe-9652-d63fc190f11e/9e6791a1-75bc-41a0-8d59-b1f2386e5177/concat.mp4
+" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p font-size="50%">CreativeCommons einsetzen, <a href="https://www.hs-wismar.de/hochschule/einrichtungen/e-learning-zentrum/medienrecht-in-der-lehre/freie-materialien/">hs-wismar.de/elearning</a><br>
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons -
+            Attribution-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a></p>
 <? endif ?>

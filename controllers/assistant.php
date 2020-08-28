@@ -37,17 +37,16 @@ class AssistantController extends ToolAssistantBaseController
         $widget->setTitle($name);
         if ($preferredLang=='en') {
             $widget->addElement(new WidgetElement('Hochschule Wismar offers many opportunities to design teaching online via E-Learning-Centre and the ITSMC.
-                Reliable operation and personal support are guaranteed for the tools presented here and they allow for a use that is unobjectionable in terms of data protection law.<br><br>
-                On this page, you will find initial information and you can start further steps directly from here.'));
-            $widget->addElement(new WidgetElement(Studip\LinkButton::create(_('Download cheat sheet'), $this->plugin->getPluginURL().'/assets/cheatsheet-teach-online.pdf')));
+                Reliable operation and personal support are guaranteed for the tools presented here and they allow a use that is unobjectionable in terms of data protection law.<br><br>
+                On this page, you will find initial information and you can start further steps directly from here.<br>'));
+            $widget->addElement(new WidgetElement(Studip\LinkButton::create(_('Download cheat sheet'), $this->plugin->getPluginURL().'/assets/cheatsheet-teach-online.pdf', ['target' => '_blank'])));
         } else {
             $widget->addElement(new WidgetElement(
                 'Die Hochschule Wismar bietet mit dem ELZ und ITSMZ viele Möglichkeiten, Lehre online zu gestalten.
                  Für die hier vorgestellten Tools sind verlässlicher Betrieb und persönlicher Support gewährleistet und sie
                  ermöglichen eine datenschutzrechtlich unbedenkliche Nutzung.<br><br>
-                 Hier finden Sie erste Informationen und können weitere Schritte direkt von hier aus starten.')
-            );
-            $widget->addElement(new WidgetElement(Studip\LinkButton::create(_('"Spickzettel" herunterladen'), $this->plugin->getPluginURL().'/assets/spickzettel-online-lehre.pdf')));
+                 Hier finden Sie erste Informationen und können weitere Schritte direkt von hier aus starten.<br>'));
+            $widget->addElement(new WidgetElement(Studip\LinkButton::create(_('"Spickzettel" herunterladen'), $this->plugin->getPluginURL().'/assets/spickzettel-online-lehre.pdf', ['target' => '_blank'])));
         }
         Sidebar::get()->addWidget($widget);
 
@@ -135,6 +134,11 @@ class AssistantController extends ToolAssistantBaseController
         $this->view = $view;
     }
 
+    public function szenarien_info_action($view = 'example')
+    {
+        $this->view = $view;
+    }
+
     public function corona_action()
     {
         $db = DBManager::get();
@@ -195,6 +199,10 @@ class AssistantController extends ToolAssistantBaseController
         $plugin_manager->setPluginActivated($plugin_manager->getPlugin('VipsPlugin')->getPluginId(), $this->course_id, true);
 
         $current_courseware = dbBlock::findCourseware($current_cid);
+        if (!$current_courseware) {
+            $data = array('title' => 'Courseware', 'cid' => $current_cid);
+            $this->createAnyBlock(null, 'Courseware', $data);
+        }
         $remote_courseware = $this->getRemoteCourseware($remote_cid);
 
         $import_folder = $this->createFolder('Courseware-Tutorial', 'Dateien für das Courseware Tutorial');
@@ -427,6 +435,6 @@ class AssistantController extends ToolAssistantBaseController
         $blubber = $plugin_manager->getPlugin('Blubber');
         $plugin_manager->setPluginActivated($blubber->getPluginId(), $this->course_id, true);
 
-        $this->redirect(URLHelper::getURL('plugins.php/blubber/streams/forum', array('cid' => $this->course_id)));
+        $this->redirect(URLHelper::getURL('plugins.php/blubber/messenger/course', array('cid' => $this->course_id)));
     }
 }
